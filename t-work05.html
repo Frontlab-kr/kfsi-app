@@ -10,17 +10,8 @@
     <!-- bootstrap -->
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
-    <!-- swiper -->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
     <!-- js -->
     <script src="./assets/js/common.js"></script>
-    <!-- flat -->
-    <script src="./assets/js/flatpickr.min.js"></script>
-    <script src="./assets/js/ko.js"></script>
-    <link rel="stylesheet" href="./assets/js/flatpickr.min.css" />
-    <!-- anypicker -->
-    <script src="./assets/js/anypicker.min.js"></script>
-    <link rel="stylesheet" href="./assets/js/anypicker.min.css" />
 
     <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
     <link rel="stylesheet" href="./assets/scss/common.css" />
@@ -34,21 +25,19 @@
       <!-- header -->
       <header class="kfsi-header-t">
         <div class="kfsi-header-t-home">
-          <a href="" class="btn-home">home</a>
+          <a href="/" class="btn-home">home</a>
         </div>
+        <div class="kfsi-header-t-tit">공지사항</div>
         <div class="kfsi-header-t-util">
-          <a href="" class="btn-close">close</a>
+          <a
+            href="javascript:void(0);$('html').addClass('active-menu')"
+            class="btn-menu"
+            >menu</a
+          >
         </div>
       </header>
-
-      <script>
-        $(document).ready(function () {
-          //header title
-          $('.kfsi-header-t-tit').html($('h1').text());
-        });
-      </script>
       <!-- //header -->
-      
+
       <div id="kfsi-body">
         <h1 class="hide">공지사항</h1>
 
@@ -57,43 +46,60 @@
             <ul class="board-list">
               <li>
                 <a href="" class="link">
-                  <span class="detail">2025.09.03 시스템 점검 안내 (2023년 10월 1일 00시 ~06시)</span>
+                  <span class="detail"
+                    >2025.09.03 시스템 점검 안내 (2023년 10월 1일 00시
+                    ~06시)</span
+                  >
                   <span class="date">2025-02-19</span>
                 </a>
               </li>
               <li>
                 <a href="" class="link">
-                  <span class="detail">2025.01.21 서버점검에 따른 업무용 앱 이용 안내</span>
+                  <span class="detail"
+                    >2025.01.21 서버점검에 따른 업무용 앱 이용 안내</span
+                  >
                   <span class="date">2025-02-19</span>
                 </a>
               </li>
               <li>
                 <a href="" class="link">
-                  <span class="detail">2025.01.21 서버점검에 따른 업무용 앱 이용 안내</span>
+                  <span class="detail"
+                    >2025.01.21 서버점검에 따른 업무용 앱 이용 안내</span
+                  >
                   <span class="date">2025-02-19</span>
                 </a>
               </li>
               <li>
                 <a href="" class="link">
-                  <span class="detail">2025.01.21 서버점검에 따른 업무용 앱 이용 안내</span>
+                  <span class="detail"
+                    >2025.01.21 서버점검에 따른 업무용 앱 이용 안내</span
+                  >
                   <span class="date">2025-02-19</span>
                 </a>
               </li>
               <li>
                 <a href="" class="link">
-                  <span class="detail">2025.01.21 서버점검에 따른 업무용 앱 이용 안내</span>
+                  <span class="detail"
+                    >2025.01.21 서버점검에 따른 업무용 앱 이용 안내</span
+                  >
                   <span class="date">2025-02-19</span>
                 </a>
               </li>
               <li>
                 <a href="" class="link">
-                  <span class="detail">2025.01.21 서버점검에 따른 업무용 앱 이용 안내서버점검에 따른 업무용 앱 이용 안내서버점검에 따른 업무용 앱 이용 안내</span>
+                  <span class="detail"
+                    >2025.01.21 서버점검에 따른 업무용 앱 이용 안내서버점검에
+                    따른 업무용 앱 이용 안내서버점검에 따른 업무용 앱 이용
+                    안내</span
+                  >
                   <span class="date">2025-02-19</span>
                 </a>
               </li>
               <li>
                 <a href="" class="link">
-                  <span class="detail">2025.01.21 서버점검에 따른 업무용 앱 이용 안내</span>
+                  <span class="detail"
+                    >2025.01.21 서버점검에 따른 업무용 앱 이용 안내</span
+                  >
                   <span class="date">2025-02-19</span>
                 </a>
               </li>
@@ -101,9 +107,163 @@
 
             <div class="board-button">
               <a href="" class="btn btn-outline-dark btn-lg">더보기</a>
-             </div>
+            </div>
           </div>
         </div>
+      </div>
+
+      <div class="kfsi-menu">
+        <div class="kfsi-menu-head">
+          <a href="" class="btn-home">home</a>
+          <a
+            href="javascript:void(0);$('html').removeClass('active-menu')"
+            class="kfsi-menu-head-close"
+            >close</a
+          >
+        </div>
+        <!-- nav -->
+        <nav class="kfsi-nav-t">
+          <ul class="nav-depth00">
+            <li><a href="">행정업무</a></li>
+            <li><a href="">점검업무</a></li>
+            <li class="on"><a href="">교육업무</a></li>
+            <li><a href="">전자민원서식</a></li>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">공지사항</a></li>
+          </ul>
+          <div class="nav-depth01">
+            <div class="nav-depth01-item on">
+              <h2 class="nav-depth01-tit">교육업무</h2>
+              <div class="nav-depth02">
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">
+                    강습관리 강습관리 강습관리 강습관리 강습관리 강습관리
+                    강습관리 강습관리 강습관리
+                  </h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">출석체크</a></li>
+                    <li><a href="">출결 현황</a></li>
+                    <li><a href="">자리이동 관리</a></li>
+                    <li><a href="">외출 관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li>
+                      <a href="">시험결과 채점관리채점관리채점관리채점관리</a>
+                    </li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="nav-depth01-item">
+              <h2 class="nav-depth01-tit">교육업무</h2>
+              <div class="nav-depth02">
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">강습관리</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">출석체크</a></li>
+                    <li><a href="">출결 현황</a></li>
+                    <li><a href="">자리이동 관리</a></li>
+                    <li><a href="">외출 관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li>
+                      <a href="">시험결과 채점관리채점관리채점관리채점관리</a>
+                    </li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- //nav -->
       </div>
     </div>
   </body>
