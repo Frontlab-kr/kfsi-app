@@ -27,7 +27,7 @@
         <div class="kfsi-header-t-home">
           <a href="/" class="btn-home">home</a>
         </div>
-        <div class="kfsi-header-t-tit">공지사항</div>
+        <div class="kfsi-header-t-tit"></div>
         <div class="kfsi-header-t-util">
           <a
             href="javascript:void(0);$('html').addClass('active-menu')"
@@ -37,8 +37,16 @@
         </div>
       </header>
       <!-- //header -->
+      <script>
+        $(document).ready(function () {
+          //header title
+          $('.kfsi-header-t-tit').html($('h1').text());
+        });
+      </script>
 
       <div id="kfsi-body">
+        <h1 class="hide">공지사항</h1>
+
         <div class="kfsi-sub-cont">
           <div class="board-cont">
             <div class="board-view">

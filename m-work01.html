@@ -115,11 +115,11 @@
                                     class="form-check-input"
                                     type="radio"
                                     name="radio1-01"
-                                    id="radio1-01-1"
+                                    id="radio1-01-01"
                                   />
                                   <label
                                     class="form-check-label"
-                                    for="radio1-01-1"
+                                    for="radio1-01-01"
                                   >
                                     연가
                                   </label>
@@ -184,11 +184,11 @@
                                     class="form-check-input"
                                     type="radio"
                                     name="radio1-02"
-                                    id="radio1-02-1"
+                                    id="radio1-02-01"
                                   />
                                   <label
                                     class="form-check-label"
-                                    for="radio1-02-1"
+                                    for="radio1-02-01"
                                   >
                                     연가휴가
                                   </label>
@@ -478,43 +478,56 @@
             <div class="date-picker-inline">
               <input type="text" class="form-control w-100" />
               <script>
-                let activeInput = null; // ✅ 현재 활성화된 input을 저장할 변수
+                document.addEventListener('DOMContentLoaded', function () {
+                  let activeInput = null;
+                  let selectedDate = ''; // ✅ 선택한 날짜를 저장할 변수
 
-                // 모든 date-picker-input 요소에 클릭 이벤트 추가
-                document
-                  .querySelectorAll('.date-picker-input')
-                  .forEach((input) => {
-                    input.addEventListener('click', function () {
-                      activeInput = this; // ✅ 현재 클릭된 input 저장
+                  // 모든 date-picker-input 요소에 클릭 이벤트 추가
+                  document
+                    .querySelectorAll('.date-picker-input')
+                    .forEach((input) => {
+                      input.addEventListener('click', function () {
+                        activeInput = this; // ✅ 현재 클릭된 input 저장
+                      });
                     });
-                  });
 
-                // Flatpickr 적용 (모달 내 달력)
-                $('.date-picker-inline .form-control').flatpickr({
-                  locale: 'ko',
-                  inline: true,
-                  onDayCreate: function (dObj, dStr, fp, dayElem) {
+                  // Flatpickr 적용 (모달 내 달력)
+                  const calendar = document
+                    .querySelector('.date-picker-inline .form-control')
+                    .flatpickr({
+                      locale: 'ko',
+                      inline: true,
+                      onDayCreate: function (dObj, dStr, fp, dayElem) {
+                        if (
+                          dayElem.classList.contains('prevMonthDay') ||
+                          dayElem.classList.contains('nextMonthDay')
+                        ) {
+                          return;
+                        }
+                        const date = new Date(dayElem.dateObj);
+                        const day = date.getDay();
+                        if (day === 0) {
+                          dayElem.classList.add('sunday');
+                        } else if (day === 6) {
+                          dayElem.classList.add('saturday');
+                        }
+                      },
+                      onChange: function (selectedDates, dateStr, instance) {
+                        selectedDate = dateStr; // ✅ "선택" 버튼을 눌렀을 때 적용될 날짜 저장
+                      },
+                    });
+
+                  // ✅ "선택" 버튼이 존재하는지 확인 후 이벤트 추가 (이벤트 위임 방식)
+                  document.body.addEventListener('click', function (event) {
                     if (
-                      dayElem.classList.contains('prevMonthDay') ||
-                      dayElem.classList.contains('nextMonthDay')
+                      event.target &&
+                      event.target.classList.contains('btn-apply-date')
                     ) {
-                      return;
+                      if (activeInput && selectedDate) {
+                        activeInput.value = selectedDate; // ✅ 선택한 날짜를 activeInput에 적용
+                      }
                     }
-
-                    const date = new Date(dayElem.dateObj);
-                    const day = date.getDay();
-
-                    if (day === 0) {
-                      dayElem.classList.add('sunday');
-                    } else if (day === 6) {
-                      dayElem.classList.add('saturday');
-                    }
-                  },
-                  onChange: function (selectedDates, dateStr, instance) {
-                    if (activeInput) {
-                      activeInput.value = dateStr; // ✅ 현재 선택된 input의 값 변경
-                    }
-                  },
+                  });
                 });
               </script>
             </div>
@@ -525,16 +538,14 @@
               class="btn btn-lg btn-outline-secondary"
               style="min-width: 140px"
               data-bs-dismiss="modal"
-              aria-label="Close"
             >
               취소
             </button>
             <button
               type="button"
-              class="btn btn-lg btn-primary"
+              class="btn btn-lg btn-primary btn-apply-date"
               style="min-width: 140px"
               data-bs-dismiss="modal"
-              aria-label="Close"
             >
               선택
             </button>
