@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="kfsi--wrap-t sub-wrap">
+      <div id="skip">
+        <a href="#kfsi-body">본문 내용 바로가기</a>
+      </div>
+
+      <!-- header -->
+      <header class="kfsi-header-t">
+        <div class="kfsi-header-t-home">
+          <!-- <a href="/" class="btn-home">home</a> -->
+          <a href="/" class="btn-back">back</a>
+        </div>
+        <div class="kfsi-header-t-tit">진단 업무</div>
+        <div class="kfsi-header-t-util">
+          <a
+            href="javascript:void(0);$('html').addClass('active-menu')"
+            class="btn-menu"
+            >menu</a
+          >
+        </div>
+      </header>
+      <!-- //header -->
+
+      <div id="kfsi-body">
+        <h1 class="hide">진단 업무</h1>
+
+        <div class="kfsi-sub-cont">
+          <h2 class="kfsi-sub-cont-tit">드림프라자</h2>
+          <div class="kfsi-tab02 mt-24">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tab01" data-bs-toggle="tab" data-bs-target="#tab01-pane" type="button" role="tab" aria-controls="tab01-pane" aria-selected="true">보수보강사항</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab02" data-bs-toggle="tab" data-bs-target="#tab02-pane" type="button" role="tab" aria-controls="tab02-pane" aria-selected="false">권고사항</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab03" data-bs-toggle="tab" data-bs-target="#tab03-pane" type="button" role="tab" aria-controls="tab03-pane" aria-selected="false">자주 쓰는 용어</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="tab01-pane" role="tabpanel" aria-labelledby="tab01" tabindex="0">
+                <div class="kfsi-sub-cont-table table-write">
+                  <table>
+                    <colgroup>
+                      <col style="width: 50px;">
+                      <col style="width: 70px;">
+                      <col style="width: 122px;">
+                      <col style="width: 200px;">
+                      <col style="width: 450px;">
+                      <col style="width: 220px;">
+                      <col style="width: 180px;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">선택</th>
+                        <th scope="col">No.</th>
+                        <th scope="col">층(장소)</th>
+                        <th scope="col">세부위치</th>
+                        <th scope="col">보수보강사항</th>
+                        <th scope="col">대책</th>
+                        <th scope="col">첨부사진</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="form-check form-check-green">
+                            <input class="form-check-input" type="checkbox" id="tableCheck01" checked="checked">
+                            <label class="form-check-label" for="tableCheck01"></label>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box">
+                            <input type="text" name="" itemid="" class="form-control w-100" value="1">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">3층</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">이삭토스트</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">스프링쿨러헤드 도색으로 인한 화재 감열 장애</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">스프링쿨러헤드 교체 권고</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="file-list">
+                            <ul>
+                              <li>
+                                <a href="">Picture01.jpg</a>
+                                <button>삭제</button>
+                              </li>
+                              <li>
+                                <a href="">Picture01.jpg</a>
+                                <button>삭제</button>
+                              </li>
+                              <li>
+                                <a href="">Picture01.jpg</a>
+                                <button>삭제</button>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="kfsi-sub-cont-btn mt-0">
+                            <button class="btn btn-sm btn-bg-dark w-100">갤러리</button>
+                            <button class="btn btn-sm btn-bg-dark w-100 ml-10">카메라</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-check form-check-green">
+                            <input class="form-check-input" type="checkbox" id="tableCheck02" checked="checked">
+                            <label class="form-check-label" for="tableCheck02"></label>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box">
+                            <input type="text" name="" itemid="" class="form-control w-100" value="1">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">3층</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">이삭토스트</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">스프링쿨러헤드 도색으로 인한 화재 감열 장애</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">스프링쿨러헤드 교체 권고</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="file-list">
+                            <ul>
+                              <li>
+                                <a href="">Picture01Picture01Picture01Picture01Picture01Picture01Picture01.jpg</a>
+                                <button>삭제</button>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="kfsi-sub-cont-btn mt-0">
+                            <button class="btn btn-sm btn-bg-dark w-100">갤러리</button>
+                            <button class="btn btn-sm btn-bg-dark w-100 ml-10">카메라</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-check form-check-green">
+                            <input class="form-check-input" type="checkbox" id="tableCheck03" checked="checked">
+                            <label class="form-check-label" for="tableCheck03"></label>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box">
+                            <input type="text" name="" itemid="" class="form-control w-100" value="112">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">3층</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">역무실(서무)</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">스프링쿨러헤드 파손</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">스프링쿨러헤드 교체 권고</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="kfsi-sub-cont-btn mt-0">
+                            <button class="btn btn-sm btn-bg-dark w-100">갤러리</button>
+                            <button class="btn btn-sm btn-bg-dark w-100 ml-10">카메라</button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="kfsi-sub-cont-btn">
+                  <div class="kfsi-sub-cont-btn-left">
+                    <button class="btn btn-lg fw-normal" style="min-width: 110px;">용어저장</button>
+                  </div>
+                  <div class="kfsi-sub-cont-btn-right">
+                    <button class="btn btn-lg btn-bg-gray" style="min-width: 160px;">중간저장</button>
+                    <button class="btn btn-lg btn-minus" style="min-width: 82px;">행삭제</button>
+                    <button class="btn btn-lg btn-plus" style="min-width: 82px;">행추가</button>
+                    <button class="btn btn-lg btn-bg-green" style="min-width: 220px;">업로드</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab02-pane" role="tabpanel" aria-labelledby="tab02" tabindex="0">
+                <div class="kfsi-sub-cont-table table-write">
+                  <table>
+                    <colgroup>
+                      <col style="width: 50px;">
+                      <col style="width: 70px;">
+                      <col style="width: 122px;">
+                      <col style="width: 200px;">
+                      <col style="width: 450px;">
+                      <col style="width: 220px;">
+                      <col style="width: 180px;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">선택</th>
+                        <th scope="col">No.</th>
+                        <th scope="col">층(장소)</th>
+                        <th scope="col">세부위치</th>
+                        <th scope="col">보수보강사항</th>
+                        <th scope="col">대책</th>
+                        <th scope="col">첨부사진</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="form-check form-check-green">
+                            <input class="form-check-input" type="checkbox" id="tableCheck01" checked="checked">
+                            <label class="form-check-label" for="tableCheck01"></label>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box">
+                            <input type="text" name="" itemid="" class="form-control w-100" value="1">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">3층</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">이삭토스트</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">스프링쿨러헤드 도색으로 인한 화재 감열 장애</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">스프링쿨러헤드 교체 권고</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="file-list">
+                            <ul>
+                              <li>
+                                <a href="">Picture01.jpg</a>
+                                <button>삭제</button>
+                              </li>
+                              <li>
+                                <a href="">Picture01.jpg</a>
+                                <button>삭제</button>
+                              </li>
+                              <li>
+                                <a href="">Picture01.jpg</a>
+                                <button>삭제</button>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="kfsi-sub-cont-btn mt-0">
+                            <button class="btn btn-sm btn-bg-dark w-100">갤러리</button>
+                            <button class="btn btn-sm btn-bg-dark w-100 ml-10">카메라</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-check form-check-green">
+                            <input class="form-check-input" type="checkbox" id="tableCheck02" checked="checked">
+                            <label class="form-check-label" for="tableCheck02"></label>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box">
+                            <input type="text" name="" itemid="" class="form-control w-100" value="1">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">3층</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">이삭토스트</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">스프링쿨러헤드 도색으로 인한 화재 감열 장애</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">스프링쿨러헤드 교체 권고</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="file-list">
+                            <ul>
+                              <li>
+                                <a href="">Picture01Picture01Picture01Picture01Picture01Picture01Picture01.jpg</a>
+                                <button>삭제</button>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="kfsi-sub-cont-btn mt-0">
+                            <button class="btn btn-sm btn-bg-dark w-100">갤러리</button>
+                            <button class="btn btn-sm btn-bg-dark w-100 ml-10">카메라</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-check form-check-green">
+                            <input class="form-check-input" type="checkbox" id="tableCheck03" checked="checked">
+                            <label class="form-check-label" for="tableCheck03"></label>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box">
+                            <input type="text" name="" itemid="" class="form-control w-100" value="112">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">3층</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">역무실(서무)</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">스프링쿨러헤드 파손</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="form-control-box h-100">
+                            <textarea name="" id="" rows="1" class="form-control w-100 h-100 dsp-block">스프링쿨러헤드 교체 권고</textarea>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="kfsi-sub-cont-btn mt-0">
+                            <button class="btn btn-sm btn-bg-dark w-100">갤러리</button>
+                            <button class="btn btn-sm btn-bg-dark w-100 ml-10">카메라</button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="kfsi-sub-cont-btn">
+                  <div class="kfsi-sub-cont-btn-left">
+                    <button class="btn btn-lg fw-normal" style="min-width: 110px;">용어저장</button>
+                  </div>
+                  <div class="kfsi-sub-cont-btn-right">
+                    <button class="btn btn-lg btn-bg-gray" style="min-width: 160px;">중간저장</button>
+                    <button class="btn btn-lg btn-minus" style="min-width: 82px;">행삭제</button>
+                    <button class="btn btn-lg btn-plus" style="min-width: 82px;">행추가</button>
+                    <button class="btn btn-lg btn-bg-green" style="min-width: 220px;">업로드</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab03-pane" role="tabpanel" aria-labelledby="tab03" tabindex="0">
+                <div class="filter-cont">
+                  <div class="filter-cont-btn">
+                    <button type="button" class="on">가나다순</button>
+                    <button type="button">등록일</button>
+                    <button type="button">최신순</button>
+                  </div>
+                  <div class="filter-cont-search">
+                    <div class="form-control-box" style="width: 400px;">
+                      <input type="text" name="" itemid="" class="form-control w-100">
+                    </div>
+                    <button type="button" class="btn btn-lg btn-bg-green" style="width: 180px;">용어 등록하기</button>
+                  </div>
+                </div>
+                <div class="kfsi-sub-cont-table">
+                  <table>
+                    <colgroup>
+                      <col style="width: 392px;">
+                      <col style="width: 164px;">
+                      <col style="width: 168px;">
+                      <col style="width: 200px;">
+                      <col style="width: 200px;">
+                      <col style="width: 168px;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">용어</th>
+                        <th scope="col">등록일</th>
+                        <th scope="col">용어복사</th>
+                        <th scope="col">보수보강사항 용어 및 행추가</th>
+                        <th scope="col">권고사항 용어 및 행추가</th>
+                        <th scope="col">용어삭제</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="ta-l">오일필터 미 설치</td>
+                        <td>2025-02-19</td>
+                        <td>
+                          <button type="button" class="btn" style="min-width: 120px;">복사</button>
+                        </td>
+                        <td>
+                          <button class="btn btn-plus" style="min-width: 108px;">추가</button>
+                        </td>
+                        <td>
+                          <button class="btn btn-plus" style="min-width: 108px;">추가</button>
+                        </td>
+                        <td>
+                          <button class="btn btn-bg-gray" style="min-width: 108px;">삭제</button></td>
+                      </tr>
+                      <tr>
+                        <td class="ta-l">오일필터 미 설치</td>
+                        <td>2025-02-19</td>
+                        <td>
+                          <button type="button" class="btn" style="min-width: 120px;">복사</button>
+                        </td>
+                        <td>
+                          <button class="btn btn-plus" style="min-width: 108px;">추가</button>
+                        </td>
+                        <td>
+                          <button class="btn btn-plus" style="min-width: 108px;">추가</button>
+                        </td>
+                        <td>
+                          <button class="btn btn-bg-gray" style="min-width: 108px;">삭제</button></td>
+                      </tr>
+                      <tr>
+                        <td class="ta-l">오일필터 미 설치</td>
+                        <td>2025-02-19</td>
+                        <td>
+                          <button type="button" class="btn" style="min-width: 120px;">복사</button>
+                        </td>
+                        <td>
+                          <button class="btn btn-plus" style="min-width: 108px;">추가</button>
+                        </td>
+                        <td>
+                          <button class="btn btn-plus" style="min-width: 108px;">추가</button>
+                        </td>
+                        <td>
+                          <button class="btn btn-bg-gray" style="min-width: 108px;">삭제</button></td>
+                      </tr>
+                      <tr>
+                        <td class="ta-l">오일필터 미 설치</td>
+                        <td>2025-02-19</td>
+                        <td>
+                          <button type="button" class="btn" style="min-width: 120px;">복사</button>
+                        </td>
+                        <td>
+                          <button class="btn btn-plus" style="min-width: 108px;">추가</button>
+                        </td>
+                        <td>
+                          <button class="btn btn-plus" style="min-width: 108px;">추가</button>
+                        </td>
+                        <td>
+                          <button class="btn btn-bg-gray" style="min-width: 108px;">삭제</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="kfsi-menu">
+        <div class="kfsi-menu-head">
+          <a href="" class="btn-home">home</a>
+          <a
+            href="javascript:void(0);$('html').removeClass('active-menu')"
+            class="kfsi-menu-head-close"
+            >close</a
+          >
+        </div>
+        <!-- nav -->
+        <nav class="kfsi-nav-t">
+          <div class="nav-depth00">
+            <ul>
+              <li><a href="">행정업무</a></li>
+              <li><a href="">점검업무</a></li>
+              <li class="on"><a href="">교육업무</a></li>
+              <li><a href="">전자민원서식</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+            </ul>
+            <button type="button" class="btn-logout">로그아웃</button>
+          </div>
+          
+          <div class="nav-depth01">
+            <div class="nav-depth01-item on">
+              <h2 class="nav-depth01-tit">교육업무</h2>
+              <div class="nav-depth02">
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">
+                    강습관리 강습관리 강습관리 강습관리 강습관리 강습관리
+                    강습관리 강습관리 강습관리
+                  </h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">출석체크</a></li>
+                    <li><a href="">출결 현황</a></li>
+                    <li><a href="">자리이동 관리</a></li>
+                    <li><a href="">외출 관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li>
+                      <a href="">시험결과 채점관리채점관리채점관리채점관리</a>
+                    </li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="nav-depth01-item">
+              <h2 class="nav-depth01-tit">교육업무</h2>
+              <div class="nav-depth02">
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">강습관리</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">출석체크</a></li>
+                    <li><a href="">출결 현황</a></li>
+                    <li><a href="">자리이동 관리</a></li>
+                    <li><a href="">외출 관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li>
+                      <a href="">시험결과 채점관리채점관리채점관리채점관리</a>
+                    </li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- //nav -->
+      </div>
+    </div>
+  </body>
+</html>
