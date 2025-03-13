@@ -8646,7 +8646,7 @@ body {
       }
     }
     &-group {
-      max-width: 360px;
+      //max-width: 360px;
       .modal-body {
         padding: 24px 16px;
       }
@@ -8705,14 +8705,14 @@ body {
             border: 1px solid #ccc;
             background: #fff;
             overflow: auto;
-            &::before {
-              content: '';
-              display: block;
-              width: 101px;
-              height: 24px;
-              margin-bottom: 16px;
-              background: url(./../images/mail/logo.svg) no-repeat 50% 50%;
-            }
+            // &::before {
+            //   content: '';
+            //   display: block;
+            //   width: 101px;
+            //   height: 24px;
+            //   margin-bottom: 16px;
+            //   background: url(./../images/mail/logo.svg) no-repeat 50% 50%;
+            // }
             label {
               color: #000;
               font-family: Pretendard;
