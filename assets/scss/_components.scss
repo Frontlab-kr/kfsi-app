@@ -1068,6 +1068,7 @@ $mobileWidth: 3992px;
         right: 10px;
         background: url(./../images/icon/ico-modal-close2.png) no-repeat 50% 50%;
         background-size: 20px 20px;
+        display: none;
       }
     }
     .modal-body {
@@ -1811,16 +1812,15 @@ $mobileWidth: 3992px;
   }
 }
 .ap-layout-popup .ap-cont {
-width: 358px;
-border-radius: 20px;
-box-shadow: none;
-
+  width: 358px;
+  border-radius: 20px;
+  box-shadow: none;
 }
 .ap-theme-default .ap-header {
   display: none;
 }
 .ap-theme-default .ap-component-selector {
-  border-color: #004D16;
+  border-color: #004d16;
 }
 .ap-theme-default .ap-content-middle {
   padding-top: 24px;

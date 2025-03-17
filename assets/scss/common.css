@@ -21138,6 +21138,7 @@ small, .small {
   right: 10px;
   background: url(./../images/icon/ico-modal-close2.png) no-repeat 50% 50%;
   background-size: 20px 20px;
+  display: none;
 }
 .kfsi-alert .modal-body {
   padding: 0;
@@ -21827,7 +21828,7 @@ small, .small {
 }
 
 .ap-theme-default .ap-component-selector {
-  border-color: #004D16;
+  border-color: #004d16;
 }
 
 .ap-theme-default .ap-content-middle {
