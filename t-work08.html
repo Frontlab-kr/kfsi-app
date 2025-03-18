@@ -44,45 +44,98 @@
 
         <div class="kfsi-sub-cont">
           <h2 class="kfsi-sub-cont-tit">진단현장 목록</h2>
-          <div class="kfsi-sub-cont-table table-write">
+          <p class="kfsi-sub-cont-txt">
+            ※ 현장목록은 등록일 기준 3개월이 지나면 복구가 불가능한 상태로
+            자동삭제 됩니다.
+          </p>
+          <div class="kfsi-sub-cont-table">
             <table>
               <colgroup>
-                <col style="width: 200px;">
-                <col>
+                <col style="width: 240px" />
+                <col style="width: 250px" />
+                <col style="width: 450px" />
+                <col style="width: 164px" />
+                <col style="width: 188px" />
               </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">현장명</th>
+                  <th scope="col">구분</th>
+                  <th scope="col">비고</th>
+                  <th scope="col">등록일</th>
+                  <th scope="col">상세</th>
+                </tr>
+              </thead>
               <tbody>
                 <tr>
-                  <th scope="row">현장명</th>
+                  <td>드림프라자</td>
+                  <td class="ta-l">작동 기능 점검</td>
+                  <td class="ta-l">-</td>
+                  <td>2025-02-19</td>
                   <td>
-                    <div class="form-control-box">
-                      <input type="text" name="" itemid="" class="form-control w-100">
-                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      style="min-width: 140px"
+                    >
+                      기록하기
+                    </button>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row">구분</th>
+                  <td>63빌딩</td>
+                  <td class="ta-l">종합 정밀 점검</td>
+                  <td class="ta-l">18시 이후 사무실 점검 불가, 일정 참고</td>
+                  <td>2025-02-19</td>
                   <td>
-                    <div class="form-control-box">
-                      <input type="text" name="" itemid="" class="form-control w-100">
-                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      style="min-width: 140px"
+                    >
+                      기록하기
+                    </button>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row">비고</th>
+                  <td>부산역(고속철도)</td>
+                  <td class="ta-l">종합 정밀 점검 + 작동 기능 점검</td>
+                  <td class="ta-l">-</td>
+                  <td>2025-02-19</td>
                   <td>
-                    <div class="form-control-box">
-                      <textarea name="" id="" rows="1" class="form-control w-100 dsp-block" style="height: 256px;"></textarea>
-                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      style="min-width: 140px"
+                    >
+                      기록하기
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>한국소방안전원</td>
+                  <td class="ta-l">종합 정밀 점검 + 작동 기능 점검</td>
+                  <td class="ta-l">오전 점검상태 완료되면 바로 업로드 요망</td>
+                  <td>2025-02-19</td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      style="min-width: 140px"
+                    >
+                      기록하기
+                    </button>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
           <div class="kfsi-sub-cont-btn mt-40">
-            <div class="kfsi-sub-cont-btn-left">
-            </div>
+            <div class="kfsi-sub-cont-btn-left"></div>
             <div class="kfsi-sub-cont-btn-right">
-              <button class="btn btn-lg btn-bg-green" style="min-width: 225px;">등록</button>
+              <button class="btn btn-lg btn-primary" style="min-width: 225px">
+                진단현장 생성
+              </button>
             </div>
           </div>
         </div>
@@ -118,7 +171,7 @@
             </ul>
             <button type="button" class="btn-logout">로그아웃</button>
           </div>
-          
+
           <div class="nav-depth01">
             <div class="nav-depth01-item on">
               <h2 class="nav-depth01-tit">교육업무</h2>
