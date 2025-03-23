@@ -342,6 +342,9 @@
                   tabindex="0"
                 >
                   <div class="py-5 px-2 bg-light rounded-3">
+                    <div class="mb-1">
+                      ※ 모바일 앱에서 신청한 외출은 연가에서 소진됩니다.
+                    </div>
                     <div class="kfsi-board-write">
                       <table
                         summary="이 표는 사용자가 대상일, 시작시간, 종료시간을 설정하고, 선택된 기간을 표시하는 기능을 제공합니다."
@@ -390,7 +393,7 @@
                         <tfoot>
                           <tr>
                             <td colspan="2" class="p-3 text-center">
-                              선택한 기간 :
+                              선택한 시간 :
                               <strong class="ms-1 fs-18 text-primary"
                                 >5일</strong
                               >
@@ -451,6 +454,20 @@
                     </tr>
                   </tbody>
                 </table>
+                <div class="kfsi-work-file p-2 bg-light border-bottom">
+                  <div class="kfsi-work-file-item">
+                    <img src="https://picsum.photos/200/300" alt="" />
+                    <button>삭제</button>
+                  </div>
+                  <div class="kfsi-work-file-item">
+                    <img src="https://picsum.photos/200/300" alt="" />
+                    <button>삭제</button>
+                  </div>
+                  <div class="kfsi-work-file-item">
+                    <img src="https://picsum.photos/200/300" alt="" />
+                    <button>삭제</button>
+                  </div>
+                </div>
               </div>
               <div class="kfsi-button">
                 <p>
@@ -566,5 +583,55 @@
         });
       });
     </script>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#modal02"
+        >
+          전자 결재
+        </button>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal02" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="./assets/images/img01.png" class="w-100" alt="" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary btn-lg"
+              style="min-width: 140px"
+              data-bs-dismiss="modal"
+            >
+              취소
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              style="min-width: 140px"
+              data-bs-dismiss="modal"
+            >
+              상신
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

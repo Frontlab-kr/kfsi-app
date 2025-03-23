@@ -20101,6 +20101,14 @@ small, .small {
   font-size: 0;
 }
 
+.ico-download2 {
+  display: inline-block;
+  min-width: 40px;
+  height: 30px;
+  background: url(../images/icon/ico-download2.svg) no-repeat 50% 50%;
+  font-size: 0;
+}
+
 .kfsi-h3 {
   color: var(--004D16, #004d16);
   font-family: Pretendard;
@@ -35832,6 +35840,35 @@ body {
   display: flex;
   gap: 24px;
   overflow: auto;
+}
+.kfsi-work-file {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.kfsi-work-file-item {
+  position: relative;
+  min-width: 104px;
+  width: 104px;
+  height: 104px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.kfsi-work-file-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.kfsi-work-file-item button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: url(../images/icon/ico-delete.svg) no-repeat 50% 50%;
+  border: 0;
+  font-size: 0;
 }
 .kfsi-tab02 > .nav {
   display: inline-flex;

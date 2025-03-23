@@ -13787,6 +13787,34 @@ body {
       gap: 24px;
       overflow: auto;
     }
+    &-file {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      &-item {
+        position: relative;
+        min-width: 104px;
+        width: 104px;
+        height: 104px;
+        border-radius: 5px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        button {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 20px;
+          height: 20px;
+          background: url(../images/icon/ico-delete.svg) no-repeat 50% 50%;
+          border: 0;
+          font-size: 0;
+        }
+      }
+    }
   }
   &-tab02 {
     > .nav {
