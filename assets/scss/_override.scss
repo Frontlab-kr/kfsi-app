@@ -258,6 +258,11 @@ small {
     border: solid 1px #ccc;
     color: #333 !important;
   }
+  &-warning-subtle {
+    border-radius: 10px;
+    border: 1px solid #fbc65c;
+    background: #ffe9bc;
+  }
   &:disabled,
   &-disabled {
     border-color: #eee !important;

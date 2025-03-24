@@ -1,0 +1,13 @@
+.sigNav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 6px;
+  z-index: 30;
+}
+.sigNav .clearButton {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

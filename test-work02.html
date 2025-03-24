@@ -1,0 +1,1943 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+
+    <!-- signaturepad -->
+    <script src="./assets/js/json2.min.js"></script>
+    <script src="./assets/js/numeric-1.2.6.min.js"></script>
+    <script src="./assets/js/bezier.js"></script>
+    <script src="./assets/js/jquery.signaturepad.js"></script>
+    <link rel="stylesheet" href="./assets/js/jquery.signaturepad.css" />
+  </head>
+  <body>
+    <div class="kfsi--wrap-t sub-wrap">
+      <div id="skip">
+        <a href="#kfsi-body">본문 내용 바로가기</a>
+      </div>
+
+      <!-- header -->
+      <header class="kfsi-header-t">
+        <div class="kfsi-header-t-home">
+          <!-- <a href="/" class="btn-home">home</a> -->
+          <a href="/" class="btn-back">back</a>
+        </div>
+        <div class="kfsi-header-t-tit">진단 업무</div>
+        <div class="kfsi-header-t-util">
+          <a
+            href="javascript:void(0);$('html').addClass('active-menu')"
+            class="btn-menu"
+            >menu</a
+          >
+        </div>
+      </header>
+      <!-- //header -->
+
+      <script>
+        $(document).ready(function () {
+          //header title
+          $('.kfsi-header-t-tit').html($('h1').html());
+        });
+      </script>
+
+      <div id="kfsi-body">
+        <h1 class="hide"><strong>시험 상세</strong></h1>
+
+        <div class="kfsi-testdetail">
+          <div class="kfsi-testdetail-head">
+            <div class="kfsi-testdetail-head__title">
+              <strong class="text-primary">1급소방안전관리자</strong>
+              <span>울산지부</span>
+              <span>시험일시 : 2025.02.19 (09:30)</span>
+              <span>회차 : 001</span>
+            </div>
+            <div class="kfsi-testdetail-head__text">
+              <span>총원 : 50명</span>
+              <span>본인확인 : 43명</span>
+              <span>결시 : 2명</span>
+              <span class="text-danger">미확인 : 4명</span>
+              <span class="text-danger">중도퇴실자 : 0명</span>
+              <span class="text-danger">부정행위자 : 1명</span>
+            </div>
+          </div>
+          <div class="kfsi-tab02 mt-24">
+            <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="tab01"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab01-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab01-pane"
+                  aria-selected="true"
+                >
+                  본인확인
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="tab02"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab02-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab02-pane"
+                  aria-selected="false"
+                >
+                  부정행위자 관리
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="tab03"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab03-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab03-pane"
+                  aria-selected="false"
+                >
+                  중도퇴실자 관리
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="tab04"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab04-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab04-pane"
+                  aria-selected="false"
+                >
+                  시험결과 채점관리
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="tab01-pane"
+                role="tabpanel"
+                aria-labelledby="tab01"
+                tabindex="0"
+              >
+                <div class="kfsi-testdetail-body">
+                  <div class="kfsi-testdetail-body-inner">
+                    <div class="kfsi-testdetail-body-item">
+                      <div class="kfsi-testdetail-body-item__contents">
+                        <div class="kfsi-testdetail-body-item__thumb">
+                          <img src="/assets/images/img03.png" alt="" />
+                        </div>
+                        <div class="kfsi-testdetail-body-item__text">
+                          <dl>
+                            <dt>수험번호</dt>
+                            <dd>01-11-1111</dd>
+                          </dl>
+                          <dl>
+                            <dt>생년월일</dt>
+                            <dd>1990.01.01</dd>
+                          </dl>
+                          <dl>
+                            <dt>이름</dt>
+                            <dd>김소방</dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-item__button">
+                        <button class="btn btn-lg btn-primary w-100">
+                          본인확인
+                        </button>
+                        <button
+                          class="btn btn-lg btn-outline-dark"
+                          style="min-width: 110px"
+                        >
+                          결시
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kfsi-testdetail-body-item">
+                      <div class="kfsi-testdetail-body-item__contents">
+                        <div class="kfsi-testdetail-body-item__thumb">
+                          <img src="/assets/images/img03.png" alt="" />
+                        </div>
+                        <div class="kfsi-testdetail-body-item__text">
+                          <dl>
+                            <dt>수험번호</dt>
+                            <dd>01-11-1111</dd>
+                          </dl>
+                          <dl>
+                            <dt>생년월일</dt>
+                            <dd>1990.01.01</dd>
+                          </dl>
+                          <dl>
+                            <dt>이름</dt>
+                            <dd>김소방</dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-item__button">
+                        <button class="btn btn-lg btn-outline-secondary w-100">
+                          본인확인
+                        </button>
+                        <button
+                          class="btn btn-lg btn-warning-subtle"
+                          style="min-width: 110px"
+                        >
+                          결시
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kfsi-testdetail-body-item">
+                      <div class="kfsi-testdetail-body-item__contents">
+                        <div class="kfsi-testdetail-body-item__thumb">
+                          <img src="/assets/images/img03.png" alt="" />
+                          <div class="kfsi-testdetail-body-item__thumb-text">
+                            미납
+                          </div>
+                        </div>
+                        <div class="kfsi-testdetail-body-item__text">
+                          <dl>
+                            <dt>수험번호</dt>
+                            <dd>01-11-1111</dd>
+                          </dl>
+                          <dl>
+                            <dt>생년월일</dt>
+                            <dd>1990.01.01</dd>
+                          </dl>
+                          <dl>
+                            <dt>이름</dt>
+                            <dd>김소방</dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-item__button">
+                        <button class="btn btn-lg btn-primary w-100">
+                          본인확인
+                        </button>
+                        <button
+                          class="btn btn-lg btn-outline-dark"
+                          style="min-width: 110px"
+                        >
+                          결시
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kfsi-testdetail-body-item">
+                      <div class="kfsi-testdetail-body-item__contents">
+                        <div class="kfsi-testdetail-body-item__thumb">
+                          <img src="/assets/images/img03.png" alt="" />
+                        </div>
+                        <div class="kfsi-testdetail-body-item__text">
+                          <dl>
+                            <dt>수험번호</dt>
+                            <dd>01-11-1111</dd>
+                          </dl>
+                          <dl>
+                            <dt>생년월일</dt>
+                            <dd>1990.01.01</dd>
+                          </dl>
+                          <dl>
+                            <dt>이름</dt>
+                            <dd>김소방</dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-item__button">
+                        <button class="btn btn-lg btn-primary w-100">
+                          본인확인
+                        </button>
+                        <button
+                          class="btn btn-lg btn-outline-dark"
+                          style="min-width: 110px"
+                        >
+                          결시
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kfsi-testdetail-body-item">
+                      <div class="kfsi-testdetail-body-item__contents">
+                        <div class="kfsi-testdetail-body-item__thumb">
+                          <img src="/assets/images/img03.png" alt="" />
+                        </div>
+                        <div class="kfsi-testdetail-body-item__text">
+                          <dl>
+                            <dt>수험번호</dt>
+                            <dd>01-11-1111</dd>
+                          </dl>
+                          <dl>
+                            <dt>생년월일</dt>
+                            <dd>1990.01.01</dd>
+                          </dl>
+                          <dl>
+                            <dt>이름</dt>
+                            <dd>김소방</dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-item__button">
+                        <button class="btn btn-lg btn-primary w-100">
+                          본인확인
+                        </button>
+                        <button
+                          class="btn btn-lg btn-outline-dark"
+                          style="min-width: 110px"
+                        >
+                          결시
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kfsi-testdetail-body-item">
+                      <div class="kfsi-testdetail-body-item__contents">
+                        <div class="kfsi-testdetail-body-item__thumb">
+                          <img src="/assets/images/img03.png" alt="" />
+                        </div>
+                        <div class="kfsi-testdetail-body-item__text">
+                          <dl>
+                            <dt>수험번호</dt>
+                            <dd>01-11-1111</dd>
+                          </dl>
+                          <dl>
+                            <dt>생년월일</dt>
+                            <dd>1990.01.01</dd>
+                          </dl>
+                          <dl>
+                            <dt>이름</dt>
+                            <dd>김소방</dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-item__button">
+                        <button class="btn btn-lg btn-primary w-100">
+                          본인확인
+                        </button>
+                        <button
+                          class="btn btn-lg btn-outline-dark"
+                          style="min-width: 110px"
+                        >
+                          결시
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kfsi-testdetail-body-item">
+                      <div class="kfsi-testdetail-body-item__contents">
+                        <div class="kfsi-testdetail-body-item__thumb">
+                          <img src="/assets/images/img03.png" alt="" />
+                        </div>
+                        <div class="kfsi-testdetail-body-item__text">
+                          <dl>
+                            <dt>수험번호</dt>
+                            <dd>01-11-1111</dd>
+                          </dl>
+                          <dl>
+                            <dt>생년월일</dt>
+                            <dd>1990.01.01</dd>
+                          </dl>
+                          <dl>
+                            <dt>이름</dt>
+                            <dd>김소방</dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-item__button">
+                        <button class="btn btn-lg btn-primary w-100">
+                          본인확인
+                        </button>
+                        <button
+                          class="btn btn-lg btn-outline-dark"
+                          style="min-width: 110px"
+                        >
+                          결시
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kfsi-testdetail-body-item">
+                      <div class="kfsi-testdetail-body-item__contents">
+                        <div class="kfsi-testdetail-body-item__thumb">
+                          <img src="/assets/images/img03.png" alt="" />
+                        </div>
+                        <div class="kfsi-testdetail-body-item__text">
+                          <dl>
+                            <dt>수험번호</dt>
+                            <dd>01-11-1111</dd>
+                          </dl>
+                          <dl>
+                            <dt>생년월일</dt>
+                            <dd>1990.01.01</dd>
+                          </dl>
+                          <dl>
+                            <dt>이름</dt>
+                            <dd>김소방</dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-item__button">
+                        <button class="btn btn-lg btn-primary w-100">
+                          본인확인
+                        </button>
+                        <button
+                          class="btn btn-lg btn-outline-dark"
+                          style="min-width: 110px"
+                        >
+                          결시
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kfsi-testdetail-body-item">
+                      <div class="kfsi-testdetail-body-item__contents">
+                        <div class="kfsi-testdetail-body-item__thumb">
+                          <img src="/assets/images/img03.png" alt="" />
+                        </div>
+                        <div class="kfsi-testdetail-body-item__text">
+                          <dl>
+                            <dt>수험번호</dt>
+                            <dd>01-11-1111</dd>
+                          </dl>
+                          <dl>
+                            <dt>생년월일</dt>
+                            <dd>1990.01.01</dd>
+                          </dl>
+                          <dl>
+                            <dt>이름</dt>
+                            <dd>김소방</dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-item__button">
+                        <button class="btn btn-lg btn-primary w-100">
+                          본인확인
+                        </button>
+                        <button
+                          class="btn btn-lg btn-outline-dark"
+                          style="min-width: 110px"
+                        >
+                          결시
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kfsi-testdetail-body-item">
+                      <div class="kfsi-testdetail-body-item__contents">
+                        <div class="kfsi-testdetail-body-item__thumb">
+                          <img src="/assets/images/img03.png" alt="" />
+                        </div>
+                        <div class="kfsi-testdetail-body-item__text">
+                          <dl>
+                            <dt>수험번호</dt>
+                            <dd>01-11-1111</dd>
+                          </dl>
+                          <dl>
+                            <dt>생년월일</dt>
+                            <dd>1990.01.01</dd>
+                          </dl>
+                          <dl>
+                            <dt>이름</dt>
+                            <dd>김소방</dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-item__button">
+                        <button class="btn btn-lg btn-primary w-100">
+                          본인확인
+                        </button>
+                        <button
+                          class="btn btn-lg btn-outline-dark"
+                          style="min-width: 110px"
+                        >
+                          결시
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kfsi-testdetail-body-item">
+                      <div class="kfsi-testdetail-body-item__contents">
+                        <div class="kfsi-testdetail-body-item__thumb">
+                          <img src="/assets/images/img03.png" alt="" />
+                        </div>
+                        <div class="kfsi-testdetail-body-item__text">
+                          <dl>
+                            <dt>수험번호</dt>
+                            <dd>01-11-1111</dd>
+                          </dl>
+                          <dl>
+                            <dt>생년월일</dt>
+                            <dd>1990.01.01</dd>
+                          </dl>
+                          <dl>
+                            <dt>이름</dt>
+                            <dd>김소방</dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-item__button">
+                        <button class="btn btn-lg btn-primary w-100">
+                          본인확인
+                        </button>
+                        <button
+                          class="btn btn-lg btn-outline-dark"
+                          style="min-width: 110px"
+                        >
+                          결시
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kfsi-testdetail-body-item">
+                      <div class="kfsi-testdetail-body-item__contents">
+                        <div class="kfsi-testdetail-body-item__thumb">
+                          <img src="/assets/images/img03.png" alt="" />
+                        </div>
+                        <div class="kfsi-testdetail-body-item__text">
+                          <dl>
+                            <dt>수험번호</dt>
+                            <dd>01-11-1111</dd>
+                          </dl>
+                          <dl>
+                            <dt>생년월일</dt>
+                            <dd>1990.01.01</dd>
+                          </dl>
+                          <dl>
+                            <dt>이름</dt>
+                            <dd>김소방</dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-item__button">
+                        <button class="btn btn-lg btn-primary w-100">
+                          본인확인
+                        </button>
+                        <button
+                          class="btn btn-lg btn-outline-dark"
+                          style="min-width: 110px"
+                        >
+                          결시
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kfsi-testdetail-body-item">
+                      <div class="kfsi-testdetail-body-item__contents">
+                        <div class="kfsi-testdetail-body-item__thumb">
+                          <img src="/assets/images/img03.png" alt="" />
+                        </div>
+                        <div class="kfsi-testdetail-body-item__text">
+                          <dl>
+                            <dt>수험번호</dt>
+                            <dd>01-11-1111</dd>
+                          </dl>
+                          <dl>
+                            <dt>생년월일</dt>
+                            <dd>1990.01.01</dd>
+                          </dl>
+                          <dl>
+                            <dt>이름</dt>
+                            <dd>김소방</dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-item__button">
+                        <button class="btn btn-lg btn-primary w-100">
+                          본인확인
+                        </button>
+                        <button
+                          class="btn btn-lg btn-outline-dark"
+                          style="min-width: 110px"
+                        >
+                          결시
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kfsi-testdetail-body-item">
+                      <div class="kfsi-testdetail-body-item__contents">
+                        <div class="kfsi-testdetail-body-item__thumb">
+                          <img src="/assets/images/img03.png" alt="" />
+                        </div>
+                        <div class="kfsi-testdetail-body-item__text">
+                          <dl>
+                            <dt>수험번호</dt>
+                            <dd>01-11-1111</dd>
+                          </dl>
+                          <dl>
+                            <dt>생년월일</dt>
+                            <dd>1990.01.01</dd>
+                          </dl>
+                          <dl>
+                            <dt>이름</dt>
+                            <dd>김소방</dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-item__button">
+                        <button class="btn btn-lg btn-primary w-100">
+                          본인확인
+                        </button>
+                        <button
+                          class="btn btn-lg btn-outline-dark"
+                          style="min-width: 110px"
+                        >
+                          결시
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kfsi-testdetail-body-item">
+                      <div class="kfsi-testdetail-body-item__contents">
+                        <div class="kfsi-testdetail-body-item__thumb">
+                          <img src="/assets/images/img03.png" alt="" />
+                        </div>
+                        <div class="kfsi-testdetail-body-item__text">
+                          <dl>
+                            <dt>수험번호</dt>
+                            <dd>01-11-1111</dd>
+                          </dl>
+                          <dl>
+                            <dt>생년월일</dt>
+                            <dd>1990.01.01</dd>
+                          </dl>
+                          <dl>
+                            <dt>이름</dt>
+                            <dd>김소방</dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-item__button">
+                        <button class="btn btn-lg btn-outline-dark w-100">
+                          본인확인
+                        </button>
+                        <button
+                          class="btn btn-lg btn-outline-dark"
+                          style="min-width: 110px"
+                        >
+                          결시
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab02-pane"
+                role="tabpanel"
+                aria-labelledby="tab02"
+                tabindex="0"
+              >
+                <div class="kfsi-testdetail-body">
+                  <div class="kfsi-testdetail-body-list">
+                    <div class="kfsi-testdetail-body-inner">
+                      <div class="kfsi-testdetail-body-list-item">
+                        <div class="kfsi-testdetail-body-list__contents">
+                          <div class="kfsi-testdetail-body-item">
+                            <div class="kfsi-testdetail-body-item__contents">
+                              <div class="kfsi-testdetail-body-item__thumb">
+                                <img src="/assets/images/img03.png" alt="" />
+                              </div>
+                              <div class="kfsi-testdetail-body-item__text">
+                                <dl>
+                                  <dt>수험번호</dt>
+                                  <dd>01-11-1111</dd>
+                                </dl>
+                                <dl>
+                                  <dt>생년월일</dt>
+                                  <dd>1990.01.01</dd>
+                                </dl>
+                                <dl>
+                                  <dt>이름</dt>
+                                  <dd>김소방</dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-testdetail-body-list__file">
+                            <strong>부정행위 증빙사진</strong>
+                            <ul>
+                              <li>
+                                <p>
+                                  첨부파일명첨부파일명첨부파일명첨부파일명첨부파일명.hwp
+                                </p>
+                                <button>삭제</button>
+                              </li>
+                            </ul>
+                            <div class="kfsi-testdetail-body-list__file-button">
+                              <button>
+                                <i class="ico-gallery"></i>
+                              </button>
+                              <button>
+                                <i class="ico-camera"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-testdetail-body-list__button">
+                          <button
+                            class="btn btn-lg btn-outline-dark w-100"
+                            style="min-width: 200px"
+                          >
+                            초기화 (삭제)
+                          </button>
+                          <button
+                            class="btn btn-lg btn-outline-secondary w-100"
+                          >
+                            <strong
+                              >확인서 서명
+                              <span class="text-info">(등록)</span></strong
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-list-item">
+                        <div class="kfsi-testdetail-body-list__contents">
+                          <div class="kfsi-testdetail-body-item">
+                            <div class="kfsi-testdetail-body-item__contents">
+                              <div class="kfsi-testdetail-body-item__thumb">
+                                <img src="/assets/images/img03.png" alt="" />
+                              </div>
+                              <div class="kfsi-testdetail-body-item__text">
+                                <dl>
+                                  <dt>수험번호</dt>
+                                  <dd>01-11-1111</dd>
+                                </dl>
+                                <dl>
+                                  <dt>생년월일</dt>
+                                  <dd>1990.01.01</dd>
+                                </dl>
+                                <dl>
+                                  <dt>이름</dt>
+                                  <dd>김소방</dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-testdetail-body-list__file">
+                            <strong>부정행위 증빙사진</strong>
+                            <ul>
+                              <li>
+                                <p>
+                                  첨부파일명첨부파일명첨부파일명첨부파일명첨부파일명.hwp
+                                </p>
+                                <button>삭제</button>
+                              </li>
+                            </ul>
+                            <div class="kfsi-testdetail-body-list__file-button">
+                              <button>
+                                <i class="ico-gallery"></i>
+                              </button>
+                              <button>
+                                <i class="ico-camera"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-testdetail-body-list__button">
+                          <button
+                            class="btn btn-lg btn-outline-dark w-100"
+                            style="min-width: 200px"
+                          >
+                            초기화 (삭제)
+                          </button>
+                          <button
+                            class="btn btn-lg btn-outline-secondary w-100"
+                          >
+                            <strong
+                              >확인서 서명
+                              <span class="text-danger">(미등록)</span></strong
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-list-item">
+                        <div class="kfsi-testdetail-body-list__contents">
+                          <div class="kfsi-testdetail-body-item">
+                            <div class="kfsi-testdetail-body-item__contents">
+                              <div class="kfsi-testdetail-body-item__thumb">
+                                <img src="/assets/images/img03.png" alt="" />
+                              </div>
+                              <div class="kfsi-testdetail-body-item__text">
+                                <dl>
+                                  <dt>수험번호</dt>
+                                  <dd>01-11-1111</dd>
+                                </dl>
+                                <dl>
+                                  <dt>생년월일</dt>
+                                  <dd>1990.01.01</dd>
+                                </dl>
+                                <dl>
+                                  <dt>이름</dt>
+                                  <dd>김소방</dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-testdetail-body-list__file">
+                            <strong>부정행위 증빙사진</strong>
+                            <ul>
+                              <li>
+                                <p>
+                                  첨부파일명첨부파일명첨부파일명첨부파일명첨부파일명.hwp
+                                </p>
+                                <button>삭제</button>
+                              </li>
+                            </ul>
+                            <div class="kfsi-testdetail-body-list__file-button">
+                              <button>
+                                <i class="ico-gallery"></i>
+                              </button>
+                              <button>
+                                <i class="ico-camera"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-testdetail-body-list__button">
+                          <button
+                            class="btn btn-lg btn-outline-dark w-100"
+                            style="min-width: 200px"
+                          >
+                            초기화 (삭제)
+                          </button>
+                          <button
+                            class="btn btn-lg btn-outline-secondary w-100"
+                          >
+                            <strong
+                              >확인서 서명
+                              <span class="text-info">(등록)</span></strong
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-list-item">
+                        <div class="kfsi-testdetail-body-list__contents">
+                          <div class="kfsi-testdetail-body-item">
+                            <div class="kfsi-testdetail-body-item__contents">
+                              <div class="kfsi-testdetail-body-item__thumb">
+                                <img src="/assets/images/img03.png" alt="" />
+                              </div>
+                              <div class="kfsi-testdetail-body-item__text">
+                                <dl>
+                                  <dt>수험번호</dt>
+                                  <dd>01-11-1111</dd>
+                                </dl>
+                                <dl>
+                                  <dt>생년월일</dt>
+                                  <dd>1990.01.01</dd>
+                                </dl>
+                                <dl>
+                                  <dt>이름</dt>
+                                  <dd>김소방</dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-testdetail-body-list__file">
+                            <strong>부정행위 증빙사진</strong>
+                            <ul>
+                              <li>
+                                <p>
+                                  첨부파일명첨부파일명첨부파일명첨부파일명첨부파일명.hwp
+                                </p>
+                                <button>삭제</button>
+                              </li>
+                            </ul>
+                            <div class="kfsi-testdetail-body-list__file-button">
+                              <button>
+                                <i class="ico-gallery"></i>
+                              </button>
+                              <button>
+                                <i class="ico-camera"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-testdetail-body-list__button">
+                          <button
+                            class="btn btn-lg btn-outline-dark w-100"
+                            style="min-width: 200px"
+                          >
+                            초기화 (삭제)
+                          </button>
+                          <button
+                            class="btn btn-lg btn-outline-secondary w-100"
+                          >
+                            <strong
+                              >확인서 서명
+                              <span class="text-danger">(미등록)</span></strong
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-list-item">
+                        <div class="kfsi-testdetail-body-list__contents">
+                          <div class="kfsi-testdetail-body-item">
+                            <div class="kfsi-testdetail-body-item__contents">
+                              <div class="kfsi-testdetail-body-item__thumb">
+                                <img src="/assets/images/img03.png" alt="" />
+                              </div>
+                              <div class="kfsi-testdetail-body-item__text">
+                                <dl>
+                                  <dt>수험번호</dt>
+                                  <dd>01-11-1111</dd>
+                                </dl>
+                                <dl>
+                                  <dt>생년월일</dt>
+                                  <dd>1990.01.01</dd>
+                                </dl>
+                                <dl>
+                                  <dt>이름</dt>
+                                  <dd>김소방</dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-testdetail-body-list__file">
+                            <strong>부정행위 증빙사진</strong>
+                            <ul>
+                              <li>
+                                <p>
+                                  첨부파일명첨부파일명첨부파일명첨부파일명첨부파일명.hwp
+                                </p>
+                                <button>삭제</button>
+                              </li>
+                            </ul>
+                            <div class="kfsi-testdetail-body-list__file-button">
+                              <button>
+                                <i class="ico-gallery"></i>
+                              </button>
+                              <button>
+                                <i class="ico-camera"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-testdetail-body-list__button">
+                          <button
+                            class="btn btn-lg btn-outline-dark w-100"
+                            style="min-width: 200px"
+                          >
+                            초기화 (삭제)
+                          </button>
+                          <button
+                            class="btn btn-lg btn-outline-secondary w-100"
+                          >
+                            <strong
+                              >확인서 서명
+                              <span class="text-info">(등록)</span></strong
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-list-item">
+                        <div class="kfsi-testdetail-body-list__contents">
+                          <div class="kfsi-testdetail-body-item">
+                            <div class="kfsi-testdetail-body-item__contents">
+                              <div class="kfsi-testdetail-body-item__thumb">
+                                <img src="/assets/images/img03.png" alt="" />
+                              </div>
+                              <div class="kfsi-testdetail-body-item__text">
+                                <dl>
+                                  <dt>수험번호</dt>
+                                  <dd>01-11-1111</dd>
+                                </dl>
+                                <dl>
+                                  <dt>생년월일</dt>
+                                  <dd>1990.01.01</dd>
+                                </dl>
+                                <dl>
+                                  <dt>이름</dt>
+                                  <dd>김소방</dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-testdetail-body-list__file">
+                            <strong>부정행위 증빙사진</strong>
+                            <ul>
+                              <li>
+                                <p>
+                                  첨부파일명첨부파일명첨부파일명첨부파일명첨부파일명.hwp
+                                </p>
+                                <button>삭제</button>
+                              </li>
+                            </ul>
+                            <div class="kfsi-testdetail-body-list__file-button">
+                              <button>
+                                <i class="ico-gallery"></i>
+                              </button>
+                              <button>
+                                <i class="ico-camera"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-testdetail-body-list__button">
+                          <button
+                            class="btn btn-lg btn-outline-dark w-100"
+                            style="min-width: 200px"
+                          >
+                            초기화 (삭제)
+                          </button>
+                          <button
+                            class="btn btn-lg btn-outline-secondary w-100"
+                          >
+                            <strong
+                              >확인서 서명
+                              <span class="text-danger">(미등록)</span></strong
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-list-item">
+                        <div class="kfsi-testdetail-body-list__contents">
+                          <div class="kfsi-testdetail-body-item">
+                            <div class="kfsi-testdetail-body-item__contents">
+                              <div class="kfsi-testdetail-body-item__thumb">
+                                <img src="/assets/images/img03.png" alt="" />
+                              </div>
+                              <div class="kfsi-testdetail-body-item__text">
+                                <dl>
+                                  <dt>수험번호</dt>
+                                  <dd>01-11-1111</dd>
+                                </dl>
+                                <dl>
+                                  <dt>생년월일</dt>
+                                  <dd>1990.01.01</dd>
+                                </dl>
+                                <dl>
+                                  <dt>이름</dt>
+                                  <dd>김소방</dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-testdetail-body-list__file">
+                            <strong>부정행위 증빙사진</strong>
+                            <ul>
+                              <li>
+                                <p>
+                                  첨부파일명첨부파일명첨부파일명첨부파일명첨부파일명.hwp
+                                </p>
+                                <button>삭제</button>
+                              </li>
+                            </ul>
+                            <div class="kfsi-testdetail-body-list__file-button">
+                              <button>
+                                <i class="ico-gallery"></i>
+                              </button>
+                              <button>
+                                <i class="ico-camera"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-testdetail-body-list__button">
+                          <button
+                            class="btn btn-lg btn-outline-dark w-100"
+                            style="min-width: 200px"
+                          >
+                            초기화 (삭제)
+                          </button>
+                          <button
+                            class="btn btn-lg btn-outline-secondary w-100"
+                          >
+                            <strong
+                              >확인서 서명
+                              <span class="text-info">(등록)</span></strong
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-list-item">
+                        <div class="kfsi-testdetail-body-list__contents">
+                          <div class="kfsi-testdetail-body-item">
+                            <div class="kfsi-testdetail-body-item__contents">
+                              <div class="kfsi-testdetail-body-item__thumb">
+                                <img src="/assets/images/img03.png" alt="" />
+                              </div>
+                              <div class="kfsi-testdetail-body-item__text">
+                                <dl>
+                                  <dt>수험번호</dt>
+                                  <dd>01-11-1111</dd>
+                                </dl>
+                                <dl>
+                                  <dt>생년월일</dt>
+                                  <dd>1990.01.01</dd>
+                                </dl>
+                                <dl>
+                                  <dt>이름</dt>
+                                  <dd>김소방</dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-testdetail-body-list__file">
+                            <strong>부정행위 증빙사진</strong>
+                            <ul>
+                              <li>
+                                <p>
+                                  첨부파일명첨부파일명첨부파일명첨부파일명첨부파일명.hwp
+                                </p>
+                                <button>삭제</button>
+                              </li>
+                            </ul>
+                            <div class="kfsi-testdetail-body-list__file-button">
+                              <button>
+                                <i class="ico-gallery"></i>
+                              </button>
+                              <button>
+                                <i class="ico-camera"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kfsi-testdetail-body-list__button">
+                          <button
+                            class="btn btn-lg btn-outline-dark w-100"
+                            style="min-width: 200px"
+                          >
+                            초기화 (삭제)
+                          </button>
+                          <button
+                            class="btn btn-lg btn-outline-secondary w-100"
+                          >
+                            <strong
+                              >확인서 서명
+                              <span class="text-danger">(미등록)</span></strong
+                            >
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab03-pane"
+                role="tabpanel"
+                aria-labelledby="tab03"
+                tabindex="0"
+              >
+                <div class="kfsi-testdetail-body">
+                  <div class="kfsi-testdetail-body-list">
+                    <div class="kfsi-testdetail-body-inner">
+                      <div class="kfsi-testdetail-body-list-item">
+                        <div class="kfsi-testdetail-body-list__contents">
+                          <div class="kfsi-testdetail-body-item">
+                            <div class="kfsi-testdetail-body-item__contents">
+                              <div class="kfsi-testdetail-body-item__thumb">
+                                <img src="/assets/images/img03.png" alt="" />
+                              </div>
+                              <div class="kfsi-testdetail-body-item__text">
+                                <dl>
+                                  <dt>수험번호</dt>
+                                  <dd>01-11-1111</dd>
+                                </dl>
+                                <dl>
+                                  <dt>생년월일</dt>
+                                  <dd>1990.01.01</dd>
+                                </dl>
+                                <dl>
+                                  <dt>이름</dt>
+                                  <dd>김소방</dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-testdetail-body-list__button">
+                            <button
+                              class="btn btn-lg btn-outline-secondary w-100"
+                            >
+                              <strong
+                                >확인서 서명<br />
+                                <span class="text-info">(등록)</span></strong
+                              >
+                            </button>
+                            <button class="btn btn-lg btn-outline-dark w-100">
+                              초기화 (삭제)
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-list-item">
+                        <div class="kfsi-testdetail-body-list__contents">
+                          <div class="kfsi-testdetail-body-item">
+                            <div class="kfsi-testdetail-body-item__contents">
+                              <div class="kfsi-testdetail-body-item__thumb">
+                                <img src="/assets/images/img03.png" alt="" />
+                                <div
+                                  class="kfsi-testdetail-body-item__thumb-text"
+                                >
+                                  미납
+                                </div>
+                              </div>
+                              <div class="kfsi-testdetail-body-item__text">
+                                <dl>
+                                  <dt>수험번호</dt>
+                                  <dd>01-11-1111</dd>
+                                </dl>
+                                <dl>
+                                  <dt>생년월일</dt>
+                                  <dd>1990.01.01</dd>
+                                </dl>
+                                <dl>
+                                  <dt>이름</dt>
+                                  <dd>김소방</dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-testdetail-body-list__button">
+                            <button
+                              class="btn btn-lg btn-outline-secondary w-100"
+                            >
+                              <strong
+                                >확인서 서명<br />
+                                <span class="text-danger"
+                                  >(미등록)</span
+                                ></strong
+                              >
+                            </button>
+                            <button class="btn btn-lg btn-outline-dark w-100">
+                              초기화 (삭제)
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-list-item">
+                        <div class="kfsi-testdetail-body-list__contents">
+                          <div class="kfsi-testdetail-body-item">
+                            <div class="kfsi-testdetail-body-item__contents">
+                              <div class="kfsi-testdetail-body-item__thumb">
+                                <img src="/assets/images/img03.png" alt="" />
+                              </div>
+                              <div class="kfsi-testdetail-body-item__text">
+                                <dl>
+                                  <dt>수험번호</dt>
+                                  <dd>01-11-1111</dd>
+                                </dl>
+                                <dl>
+                                  <dt>생년월일</dt>
+                                  <dd>1990.01.01</dd>
+                                </dl>
+                                <dl>
+                                  <dt>이름</dt>
+                                  <dd>김소방</dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-testdetail-body-list__button">
+                            <button
+                              class="btn btn-lg btn-outline-secondary w-100"
+                            >
+                              <strong
+                                >확인서 서명<br />
+                                <span class="text-info">(등록)</span></strong
+                              >
+                            </button>
+                            <button class="btn btn-lg btn-outline-dark w-100">
+                              초기화 (삭제)
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-list-item">
+                        <div class="kfsi-testdetail-body-list__contents">
+                          <div class="kfsi-testdetail-body-item">
+                            <div class="kfsi-testdetail-body-item__contents">
+                              <div class="kfsi-testdetail-body-item__thumb">
+                                <img src="/assets/images/img03.png" alt="" />
+                                <div
+                                  class="kfsi-testdetail-body-item__thumb-text"
+                                >
+                                  미납
+                                </div>
+                              </div>
+                              <div class="kfsi-testdetail-body-item__text">
+                                <dl>
+                                  <dt>수험번호</dt>
+                                  <dd>01-11-1111</dd>
+                                </dl>
+                                <dl>
+                                  <dt>생년월일</dt>
+                                  <dd>1990.01.01</dd>
+                                </dl>
+                                <dl>
+                                  <dt>이름</dt>
+                                  <dd>김소방</dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-testdetail-body-list__button">
+                            <button
+                              class="btn btn-lg btn-outline-secondary w-100"
+                            >
+                              <strong
+                                >확인서 서명<br />
+                                <span class="text-danger"
+                                  >(미등록)</span
+                                ></strong
+                              >
+                            </button>
+                            <button class="btn btn-lg btn-outline-dark w-100">
+                              초기화 (삭제)
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-list-item">
+                        <div class="kfsi-testdetail-body-list__contents">
+                          <div class="kfsi-testdetail-body-item">
+                            <div class="kfsi-testdetail-body-item__contents">
+                              <div class="kfsi-testdetail-body-item__thumb">
+                                <img src="/assets/images/img03.png" alt="" />
+                              </div>
+                              <div class="kfsi-testdetail-body-item__text">
+                                <dl>
+                                  <dt>수험번호</dt>
+                                  <dd>01-11-1111</dd>
+                                </dl>
+                                <dl>
+                                  <dt>생년월일</dt>
+                                  <dd>1990.01.01</dd>
+                                </dl>
+                                <dl>
+                                  <dt>이름</dt>
+                                  <dd>김소방</dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-testdetail-body-list__button">
+                            <button
+                              class="btn btn-lg btn-outline-secondary w-100"
+                            >
+                              <strong
+                                >확인서 서명<br />
+                                <span class="text-info">(등록)</span></strong
+                              >
+                            </button>
+                            <button class="btn btn-lg btn-outline-dark w-100">
+                              초기화 (삭제)
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="kfsi-testdetail-body-list-item">
+                        <div class="kfsi-testdetail-body-list__contents">
+                          <div class="kfsi-testdetail-body-item">
+                            <div class="kfsi-testdetail-body-item__contents">
+                              <div class="kfsi-testdetail-body-item__thumb">
+                                <img src="/assets/images/img03.png" alt="" />
+                                <div
+                                  class="kfsi-testdetail-body-item__thumb-text"
+                                >
+                                  미납
+                                </div>
+                              </div>
+                              <div class="kfsi-testdetail-body-item__text">
+                                <dl>
+                                  <dt>수험번호</dt>
+                                  <dd>01-11-1111</dd>
+                                </dl>
+                                <dl>
+                                  <dt>생년월일</dt>
+                                  <dd>1990.01.01</dd>
+                                </dl>
+                                <dl>
+                                  <dt>이름</dt>
+                                  <dd>김소방</dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="kfsi-testdetail-body-list__button">
+                            <button
+                              class="btn btn-lg btn-outline-secondary w-100"
+                            >
+                              <strong
+                                >확인서 서명<br />
+                                <span class="text-danger"
+                                  >(미등록)</span
+                                ></strong
+                              >
+                            </button>
+                            <button class="btn btn-lg btn-outline-dark w-100">
+                              초기화 (삭제)
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade show active"
+                id="tab04-pane"
+                role="tabpanel"
+                aria-labelledby="tab04"
+                tabindex="0"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="kfsi-menu">
+        <div class="kfsi-menu-head">
+          <a href="" class="btn-home">home</a>
+          <a
+            href="javascript:void(0);$('html').removeClass('active-menu')"
+            class="kfsi-menu-head-close"
+            >close</a
+          >
+        </div>
+        <!-- nav -->
+        <nav class="kfsi-nav-t">
+          <div class="nav-depth00">
+            <ul>
+              <li><a href="">행정업무</a></li>
+              <li><a href="">점검업무</a></li>
+              <li class="on"><a href="">교육업무</a></li>
+              <li><a href="">전자민원서식</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+            </ul>
+            <button type="button" class="btn-logout">로그아웃</button>
+          </div>
+
+          <div class="nav-depth01">
+            <div class="nav-depth01-item on">
+              <h2 class="nav-depth01-tit">교육업무</h2>
+              <div class="nav-depth02">
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">
+                    강습관리 강습관리 강습관리 강습관리 강습관리 강습관리
+                    강습관리 강습관리 강습관리
+                  </h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">출석체크</a></li>
+                    <li><a href="">출결 현황</a></li>
+                    <li><a href="">자리이동 관리</a></li>
+                    <li><a href="">외출 관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li>
+                      <a href="">시험결과 채점관리채점관리채점관리채점관리</a>
+                    </li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="nav-depth01-item">
+              <h2 class="nav-depth01-tit">교육업무</h2>
+              <div class="nav-depth02">
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">강습관리</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">출석체크</a></li>
+                    <li><a href="">출결 현황</a></li>
+                    <li><a href="">자리이동 관리</a></li>
+                    <li><a href="">외출 관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li>
+                      <a href="">시험결과 채점관리채점관리채점관리채점관리</a>
+                    </li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- //nav -->
+      </div>
+    </div>
+
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5000;
+      "
+    >
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#alert01"
+        >
+          업무용앱 시험업무_태블릿 (2-2)
+        </button>
+      </div>
+
+      <div class="mt-1">
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#alert02"
+        >
+          업무용앱 시험업무_태블릿 (3-2)
+        </button>
+      </div>
+
+      <div class="mt-1">
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#alert03"
+        >
+          업무용앱 시험업무_태블릿 (4-2)
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="alert01"
+      tabindex="-1"
+      aria-labelledby="alert01Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered kfsi-alert">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close d-block"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="kfsi-testdetail-body-item w-100">
+              <div class="kfsi-testdetail-body-item__contents">
+                <div class="kfsi-testdetail-body-item__thumb">
+                  <img src="/assets/images/img03.png" alt="" />
+                </div>
+                <div class="kfsi-testdetail-body-item__text">
+                  <dl>
+                    <dt>수험번호</dt>
+                    <dd>01-11-1111</dd>
+                  </dl>
+                  <dl>
+                    <dt>생년월일</dt>
+                    <dd>1990.01.01</dd>
+                  </dl>
+                  <dl>
+                    <dt>이름</dt>
+                    <dd>김소방</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-lg btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              부정행위자 등록
+            </button>
+            <button
+              type="button"
+              class="btn btn-lg btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              중도퇴실자 등록
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="alert02"
+      tabindex="-1"
+      aria-labelledby="alert01Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered kfsi-alert">
+        <div class="modal-content" style="min-width: 872px; width: 872px">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-6 text-center fs-20">
+              <strong>부정행위 발생 및 인정 확인서</strong>
+            </div>
+            <div class="d-flex gap-6">
+              <div
+                class="w-100 p-5 border rounded-1 fs-15 overflow-auto"
+                style="height: 420px"
+              >
+                1.기본 정보<br />
+                <br />
+                2.작성일자: 2025년 1월 30일<br />
+                <br />
+                3.시험명: 제○회 소방안전관리자 자격시험<br />
+                <br />
+                4.시험일시: 2025년 1월 30일 (목) 10:00 ~ 12:00<br />
+                <br />
+                5.시험장소: ○○시험센터 ○○호<br />
+                <br />
+                6.부정행위자 정보<br />
+                <br />
+                7.확인 사항<br />
+                <br />
+                1.기본 정보<br />
+                <br />
+                2.작성일자: 2025년 1월 30일<br />
+                <br />
+                3.시험명: 제○회 소방안전관리자 자격시험<br />
+                <br />
+                4.시험일시: 2025년 1월 30일 (목) 10:00 ~ 12:00<br />
+                <br />
+                5.시험장소: ○○시험센터 ○○호<br />
+                <br />
+                6.부정행위자 정보<br />
+                <br />
+                7.확인 사항
+              </div>
+              <div class="w-100 pt-4">
+                본인은 위 내용을 확인하였으며, 사실관계를 인정합니다.<br />
+                <br />
+                <strong>
+                  수험번호 : 01-11-1111<br />
+                  서명 : 홍길동(1900.01.01)
+                </strong>
+
+                <div
+                  class="position-relative mt-2 border"
+                  style="height: 299px"
+                >
+                  <div
+                    class="position-absolute top-0 bottom-0 start-0 end-0 d-flex align-items-center justify-content-center text-center"
+                    style="z-index: 10"
+                  >
+                    <strong class="" style="font-size: 80px; color: #eee"
+                      >서 명</strong
+                    >
+                  </div>
+                  <div
+                    class="sigPad position-relative"
+                    id="smoothed"
+                    style="z-index: 20"
+                  >
+                    <ul class="sigNav">
+                      <li class="clearButton">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-dark"
+                        >
+                          지우기
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="sig sigWrapper" style="height: auto">
+                      <div class="typed"></div>
+                      <canvas class="pad" width="400" height="297"></canvas>
+                      <input type="hidden" name="output-2" class="output" />
+                    </div>
+                  </div>
+                  <script>
+                    $(document).ready(function () {
+                      $('#smoothed').signaturePad({
+                        drawOnly: true,
+                        drawBezierCurves: true,
+                        lineTop: 300,
+                      });
+                    });
+                  </script>
+                </div>
+                <div class="form-check form-check-reverse mt-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="reverseCheck1"
+                  />
+                  <label class="form-check-label fs-15" for="reverseCheck1">
+                    감독관 대리 서명 여부
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-lg btn-outline-dark"
+              data-bs-dismiss="modal"
+              style="width: 155px"
+            >
+              취소
+            </button>
+            <button
+              type="button"
+              class="btn btn-lg btn-primary"
+              data-bs-dismiss="modal"
+              style="width: 155px"
+            >
+              저장
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="alert03"
+      tabindex="-1"
+      aria-labelledby="alert01Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered kfsi-alert">
+        <div class="modal-content" style="min-width: 872px; width: 872px">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-6 text-center fs-20">
+              <strong>중도퇴실 인정 확인서</strong>
+            </div>
+            <div class="d-flex gap-6">
+              <div
+                class="w-100 p-5 border rounded-1 fs-15 overflow-auto"
+                style="height: 420px"
+              >
+                1.기본 정보<br />
+                <br />
+                2.작성일자: 2025년 1월 30일<br />
+                <br />
+                3.시험명: 제○회 소방안전관리자 자격시험<br />
+                <br />
+                4.시험일시: 2025년 1월 30일 (목) 10:00 ~ 12:00<br />
+                <br />
+                5.시험장소: ○○시험센터 ○○호<br />
+                <br />
+                6.부정행위자 정보<br />
+                <br />
+                7.확인 사항<br />
+                <br />
+                1.기본 정보<br />
+                <br />
+                2.작성일자: 2025년 1월 30일<br />
+                <br />
+                3.시험명: 제○회 소방안전관리자 자격시험<br />
+                <br />
+                4.시험일시: 2025년 1월 30일 (목) 10:00 ~ 12:00<br />
+                <br />
+                5.시험장소: ○○시험센터 ○○호<br />
+                <br />
+                6.부정행위자 정보<br />
+                <br />
+                7.확인 사항
+              </div>
+              <div class="w-100 pt-4">
+                본인은 위 내용을 확인하였으며, 사실관계를 인정합니다.<br />
+                <br />
+                <strong>
+                  수험번호 : 01-11-1111<br />
+                  서명 : 홍길동(1900.01.01)
+                </strong>
+
+                <div
+                  class="position-relative mt-2 border"
+                  style="height: 299px"
+                >
+                  <div
+                    class="position-absolute top-0 bottom-0 start-0 end-0 d-flex align-items-center justify-content-center text-center"
+                    style="z-index: 10"
+                  >
+                    <strong class="" style="font-size: 80px; color: #eee"
+                      >서 명</strong
+                    >
+                  </div>
+                  <div
+                    class="sigPad position-relative"
+                    id="smoothed02"
+                    style="z-index: 20"
+                  >
+                    <ul class="sigNav">
+                      <li class="clearButton">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-dark"
+                        >
+                          지우기
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="sig sigWrapper" style="height: auto">
+                      <div class="typed"></div>
+                      <canvas class="pad" width="400" height="297"></canvas>
+                      <input type="hidden" name="output-2" class="output" />
+                    </div>
+                  </div>
+                  <script>
+                    $(document).ready(function () {
+                      $('#smoothed02').signaturePad({
+                        drawOnly: true,
+                        drawBezierCurves: true,
+                        lineTop: 300,
+                      });
+                    });
+                  </script>
+                </div>
+                <div class="form-check form-check-reverse mt-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="reverseCheck1"
+                  />
+                  <label class="form-check-label fs-15" for="reverseCheck1">
+                    감독관 대리 서명 여부
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-lg btn-outline-dark"
+              data-bs-dismiss="modal"
+              style="width: 155px"
+            >
+              취소
+            </button>
+            <button
+              type="button"
+              class="btn btn-lg btn-primary"
+              data-bs-dismiss="modal"
+              style="width: 155px"
+            >
+              저장
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
