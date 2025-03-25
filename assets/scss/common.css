@@ -22941,9 +22941,9 @@ html.active-menu .kfsi-menu {
   overflow: auto;
 }
 .kfsi-testdetail-body-inner {
-  display: flex;
+  display: grid;
   align-items: flex-start;
-  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
   width: 200%;
   height: 530px;
