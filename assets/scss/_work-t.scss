@@ -1184,7 +1184,7 @@ html {
       &-item {
         min-width: 300px;
         width: 300px;
-        height: 100%;
+        min-height: 253px;
         border: 1px solid #999;
         &__thumb {
           position: relative;
@@ -1271,6 +1271,7 @@ html {
           justify-content: center;
           width: 100%;
           height: 100%;
+          min-height: 253px;
         }
         &__delete {
           display: flex;
@@ -1278,6 +1279,7 @@ html {
           justify-content: center;
           width: 100%;
           height: 100%;
+          min-height: 253px;
           border: 0;
           background: #ccc;
         }
@@ -1296,14 +1298,20 @@ html {
         }
         &-item {
           width: 532px;
-          height: 100%;
           padding: 16px;
           border-radius: 10px;
           border: 1px solid #ccc;
           background: #fff;
+          .kfsi-testdetail-body-item {
+            min-height: auto;
+          }
+          .kfsi-testdetail-body-item__none {
+            min-height: 246px;
+          }
           .kfsi-testdetail-body-item__delete {
             width: calc(100% + 32px);
-            height: calc(100% + 32px);
+
+            min-height: 278px;
             margin: -16px;
             border-radius: 8px;
           }
