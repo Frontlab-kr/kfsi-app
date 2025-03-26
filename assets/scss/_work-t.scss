@@ -1184,7 +1184,7 @@ html {
       &-item {
         min-width: 300px;
         width: 300px;
-        //height: 250px;
+        height: 100%;
         border: 1px solid #999;
         &__thumb {
           position: relative;
@@ -1265,18 +1265,48 @@ html {
           padding: 10px;
           border-top: 1px solid #eee;
         }
+        &__none {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+        }
+        &__delete {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          border: 0;
+          background: #ccc;
+        }
       }
       &-list {
         .kfsi-testdetail-body-inner {
           height: 580px;
         }
+        &-menu {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 10px;
+          width: 100%;
+          height: 190px;
+        }
         &-item {
           width: 532px;
-
+          height: 100%;
           padding: 16px;
           border-radius: 10px;
           border: 1px solid #ccc;
           background: #fff;
+          .kfsi-testdetail-body-item__delete {
+            width: calc(100% + 32px);
+            height: calc(100% + 32px);
+            margin: -16px;
+            border-radius: 8px;
+          }
         }
         &__contents {
           display: flex;
@@ -1294,8 +1324,26 @@ html {
             }
           }
         }
+        &__thumb {
+          width: 100%;
+          min-height: 112px;
+          border-radius: 10px;
+          border: 1px solid #ccc;
+          background: #fff;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
         &__file {
-          margin: 32px 0 0 0;
+          width: 100%;
+          height: 100%;
+          padding: 5px;
+          border-radius: 10px;
+          border: 1px solid #ccc;
+          background: #fff;
           ul {
             padding: 6px 0;
             li {
@@ -1332,10 +1380,48 @@ html {
               align-items: center;
               justify-content: center;
               width: 100%;
-              height: 70px;
+              height: 50px;
               border-radius: 5px;
               border: 1px dashed #999;
               background: #fff;
+            }
+          }
+          p {
+            margin: 20px 0 18px 0;
+            color: #999;
+            text-align: center;
+            font-family: Pretendard;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.42px;
+          }
+        }
+        &__sign {
+          width: 100%;
+          height: 100%;
+          padding: 10px;
+          border-radius: 10px;
+          border: 1px solid #666;
+          background: #f6f6f6;
+          color: #333;
+          text-align: center;
+          font-family: Pretendard;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px; /* 142.857% */
+          &-result {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            border: 1px solid #666;
+            background: #f6f6f6;
+            overflow: hidden;
+            canvas {
+              width: 100%;
+              height: 100%;
             }
           }
         }
