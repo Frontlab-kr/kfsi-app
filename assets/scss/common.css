@@ -22920,6 +22920,7 @@ html.active-menu .kfsi-menu {
   display: none;
 }
 .kfsi-testdetail-head__text {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;

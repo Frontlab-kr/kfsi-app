@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+
+    <!-- signaturepad -->
+    <script src="./assets/js/json2.min.js"></script>
+    <script src="./assets/js/numeric-1.2.6.min.js"></script>
+    <script src="./assets/js/bezier.js"></script>
+    <script src="./assets/js/jquery.signaturepad.js"></script>
+    <script src="./assets/js/sample-signature-output.js"></script>
+    <link rel="stylesheet" href="./assets/js/jquery.signaturepad.css" />
+  </head>
+  <body>
+    <div class="kfsi--wrap-t sub-wrap">
+      <div id="skip">
+        <a href="#kfsi-body">본문 내용 바로가기</a>
+      </div>
+
+      <!-- header -->
+      <header class="kfsi-header-t">
+        <div class="kfsi-header-t-home">
+          <!-- <a href="/" class="btn-home">home</a> -->
+          <a href="/" class="btn-back">back</a>
+        </div>
+        <div class="kfsi-header-t-tit">진단 업무</div>
+        <div class="kfsi-header-t-util">
+          <a
+            href="javascript:void(0);$('html').addClass('active-menu')"
+            class="btn-menu"
+            >menu</a
+          >
+        </div>
+      </header>
+      <!-- //header -->
+
+      <script>
+        $(document).ready(function () {
+          //header title
+          $('.kfsi-header-t-tit').html($('h1').html());
+        });
+      </script>
+
+      <div id="kfsi-body">
+        <h1 class="hide"><strong>실무교육 실무능력평가</strong></h1>
+
+        <div class="kfsi-testdetail">
+          <div class="kfsi-testdetail-head">
+            <div class="kfsi-testdetail-head__text">
+              <span
+                ><strong class="text-primary">1급 소방안전관리자</strong></span
+              >
+              <span>울산지부</span>
+              <span>교육일시 : 2025.04.14 (09:00~14:00)</span>
+              <span>회차 : 001</span>
+            </div>
+          </div>
+          <div class="kfsi-sub-cont-table mt-5">
+            <table>
+              <colgroup>
+                <col style="width: 70px" />
+                <col style="width: 120px" />
+                <col style="width: 160px" />
+                <col style="width: 642px" />
+                <col style="width: 150px" />
+                <col style="width: 150px" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col" rowspan="2">순번</th>
+                  <th scope="col" rowspan="2">접수번호</th>
+                  <th scope="col" rowspan="2">성명</th>
+                  <th scope="col" rowspan="2">대상물(업체)명</th>
+                  <th scope="col" colspan="2">소화기</th>
+                </tr>
+                <tr>
+                  <th>평가</th>
+                  <th>재평가</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>011-001</td>
+                  <td>
+                    홍길동<br />
+                    (1928년)
+                  </td>
+                  <td class="text-start">한국소방안전원</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control w-100"
+                      title="평가"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control w-100"
+                      title="재평가"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>011-001</td>
+                  <td>
+                    홍길동<br />
+                    (1928년)
+                  </td>
+                  <td class="text-start">한국소방안전원</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control w-100"
+                      title="평가"
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control w-100"
+                      title="재평가"
+                      disabled
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>011-001</td>
+                  <td>
+                    홍길동<br />
+                    (1928년)
+                  </td>
+                  <td class="text-start">한국소방안전원</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control w-100"
+                      title="평가"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control w-100"
+                      title="재평가"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>011-001</td>
+                  <td>
+                    홍길동<br />
+                    (1928년)
+                  </td>
+                  <td class="text-start">한국소방안전원</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control w-100"
+                      title="평가"
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control w-100"
+                      title="재평가"
+                      disabled
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>011-001</td>
+                  <td>
+                    홍길동<br />
+                    (1928년)
+                  </td>
+                  <td class="text-start">한국소방안전원</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control w-100"
+                      title="평가"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control w-100"
+                      title="재평가"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>011-001</td>
+                  <td>
+                    홍길동<br />
+                    (1928년)
+                  </td>
+                  <td class="text-start">한국소방안전원</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control w-100"
+                      title="평가"
+                      disabled
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control w-100"
+                      title="재평가"
+                      disabled
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="d-flex justify-content-end mt-4">
+            <button
+              type="button"
+              class="btn btn-lg btn-primary"
+              style="width: 225px"
+            >
+              저장
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="kfsi-menu">
+        <div class="kfsi-menu-head">
+          <a href="" class="btn-home">home</a>
+          <a
+            href="javascript:void(0);$('html').removeClass('active-menu')"
+            class="kfsi-menu-head-close"
+            >close</a
+          >
+        </div>
+        <!-- nav -->
+        <nav class="kfsi-nav-t">
+          <div class="nav-depth00">
+            <ul>
+              <li><a href="">행정업무</a></li>
+              <li><a href="">점검업무</a></li>
+              <li class="on"><a href="">교육업무</a></li>
+              <li><a href="">전자민원서식</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+            </ul>
+            <button type="button" class="btn-logout">로그아웃</button>
+          </div>
+
+          <div class="nav-depth01">
+            <div class="nav-depth01-item on">
+              <h2 class="nav-depth01-tit">교육업무</h2>
+              <div class="nav-depth02">
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">
+                    강습관리 강습관리 강습관리 강습관리 강습관리 강습관리
+                    강습관리 강습관리 강습관리
+                  </h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">출석체크</a></li>
+                    <li><a href="">출결 현황</a></li>
+                    <li><a href="">자리이동 관리</a></li>
+                    <li><a href="">외출 관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li>
+                      <a href="">시험결과 채점관리채점관리채점관리채점관리</a>
+                    </li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="nav-depth01-item">
+              <h2 class="nav-depth01-tit">교육업무</h2>
+              <div class="nav-depth02">
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">강습관리</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">출석체크</a></li>
+                    <li><a href="">출결 현황</a></li>
+                    <li><a href="">자리이동 관리</a></li>
+                    <li><a href="">외출 관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li>
+                      <a href="">시험결과 채점관리채점관리채점관리채점관리</a>
+                    </li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- //nav -->
+      </div>
+    </div>
+  </body>
+</html>
