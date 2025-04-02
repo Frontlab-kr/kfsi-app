@@ -93,6 +93,10 @@ html {
       display: flex;
       align-items: center;
       gap: 16px;
+      min-width: 200px;
+    }
+    &-right {
+      justify-content: flex-end;
     }
   }
   &-write {
