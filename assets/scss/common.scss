@@ -205,6 +205,21 @@ body {
     z-index: 60;
     border-bottom: solid 1px #ccc;
     background-color: #fff;
+    &-start,
+    &-center,
+    &-end {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-width: 100px;
+    }
+    &-center {
+      width: 100%;
+      justify-content: center;
+    }
+    &-end {
+      justify-content: flex-end;
+    }
     &-head {
       > .kfsi-inner {
         display: flex;
@@ -791,6 +806,7 @@ body {
         display: none;
       }
       &-logo {
+        display: none;
         padding: 2px 0 0 0;
         img {
           width: 125px;
@@ -799,7 +815,7 @@ body {
       &-back {
         display: flex;
         align-items: center;
-        min-width: 60px;
+        min-width: 100px;
         height: 100%;
         button {
           border: 0;
@@ -810,12 +826,13 @@ body {
           background-size: 11px 18px;
           font-size: 0;
         }
+        display: none;
       }
       &-title {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: calc(100% - 120px);
+        width: 100%;
         height: 100%;
         font-size: 16px;
         font-weight: bold;
@@ -833,6 +850,7 @@ body {
         background: url(../images/mo/icon/ico-header-home.svg) no-repeat 50% 50%;
         background-size: 16px 16px;
         font-size: 0;
+        display: none;
       }
       &-search {
         border: 0;
@@ -842,34 +860,29 @@ body {
           50%;
         background-size: 18px 18px;
         font-size: 0;
+        display: none;
+      }
+      &-logout {
+        border: 0;
+        width: 35px;
+        height: 35px;
+        background: url(../images/mo/icon/ico-header-logout.svg) no-repeat 50%
+          50%;
+        background-size: 35px 35px;
+        font-size: 0;
+        display: none;
       }
       &-menu {
         &__open {
-          position: absolute;
-          top: 13px;
-          right: 16px;
+          position: relative;
           display: block;
           width: 24px;
           height: 22px;
           background: url(../images/icon/ico-menu.svg) no-repeat 100% 50%;
           background-size: 18px 16px;
           font-size: 0;
+          display: none;
         }
-      }
-      &-sub {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
-        min-width: 100px;
-      }
-      &-button {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 10px;
-        min-width: 60px;
       }
     }
   }
@@ -904,49 +917,46 @@ body {
   }
   &--main {
     @media screen and (max-width: 3992px) {
-      .kfsi-header-sub {
-        display: none;
-      }
-      .kfsi-header-main {
-        display: flex;
+      .kfsi-header-logo,
+      .kfsi-header-menu__open {
+        display: block;
       }
     }
   }
-  &--backup {
-    @media screen and (max-width: 3992px) {
-      .kfsi-header-button {
-        display: none;
-      }
-      .kfsi-header-menu {
-        display: none;
-      }
-    }
-  }
-  &--backup-main {
-    .kfsi-header-title {
-      width: 100%;
-    }
+  &--sub {
     @media screen and (max-width: 3992px) {
       .kfsi-header-back,
-      .kfsi-header-button,
-      .kfsi-header-head-search {
-        display: none;
-      }
-      .kfsi-header-menu {
-        display: none;
+      .kfsi-header-home,
+      .kfsi-header-search,
+      .kfsi-header-menu__open {
+        display: block;
       }
     }
   }
-  &--work {
+  &--menu {
     @media screen and (max-width: 3992px) {
-      .kfsi-header-button {
-        display: none;
-      }
-      .kfsi-header-menu {
-        //display: none;
+      .kfsi-header-back,
+      .kfsi-header-menu__open {
+        display: block;
       }
     }
   }
+  &--logout {
+    @media screen and (max-width: 3992px) {
+      .kfsi-header-logout {
+        display: block;
+      }
+    }
+  }
+  &--back {
+    @media screen and (max-width: 3992px) {
+      .kfsi-header-back {
+        display: block;
+      }
+    }
+  }
+
+
   &-footer {
     position: relative;
     background-color: #666;

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- swiper -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div id="headerMenu"></div>
+    <div class="kfsi kfsi--back">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <h1 class="hide">자격·선임 정보</h1>
+        <div class="kfsi-backup">
+          <div>
+            <h4 class="kfsi-h4">안전원 자격·선임 검색</h4>
+            <div class="kfsi-board-write">
+              <table
+                summary="이 테이블은 이름과 생년월일을 입력할 수 있는 두 개의 행으로 구성되어 있습니다."
+              >
+                <caption>
+                  이 테이블은 안전원 자격 및 선임 검색을 위한 입력 폼입니다.
+                </caption>
+                <colgroup>
+                  <col style="width: 110px" />
+                  <col style="" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row">이름</th>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control w-100"
+                        title="이름"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">생년월일</th>
+                    <td>
+                      <input
+                        type="password"
+                        class="form-control w-100"
+                        title="생년월일"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="kfsi-backup-button mt-4">
+              <button type="button" class="btn btn-primary btn-lg w-100">
+                검색하기
+              </button>
+            </div>
+          </div>
+          <div class="mt-12">
+            <h4 class="kfsi-h4 mb-2">안전원 자격∙선임 검색 결과</h4>
+            <div class="mb-1 fs-14 text-end">
+              조회건수 : <strong>1</strong>건
+            </div>
+            <div class="kfsi-backup-table">
+              <table>
+                <colgroup>
+                  <col style="width: 80px" />
+                  <col style="width: 208px" />
+                  <col style="width: 70px" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">이름</th>
+                    <th scope="col">생년월일</th>
+                    <th scope="col">선택</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>홍길동</td>
+                    <td>1990.01.01</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-dark">
+                        선택
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>홍길동</td>
+                    <td>1990.01.01</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-dark">
+                        선택
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>홍길동</td>
+                    <td>1990.01.01</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-dark">
+                        선택
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -23448,6 +23448,19 @@ body {
   border-bottom: solid 1px #ccc;
   background-color: #fff;
 }
+.kfsi-header-start, .kfsi-header-center, .kfsi-header-end {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 100px;
+}
+.kfsi-header-center {
+  width: 100%;
+  justify-content: center;
+}
+.kfsi-header-end {
+  justify-content: flex-end;
+}
 .kfsi-header-head > .kfsi-inner {
   display: flex;
   align-items: center;
@@ -24004,6 +24017,7 @@ body {
     display: none;
   }
   .kfsi-header-logo {
+    display: none;
     padding: 2px 0 0 0;
   }
   .kfsi-header-logo img {
@@ -24012,8 +24026,9 @@ body {
   .kfsi-header-back {
     display: flex;
     align-items: center;
-    min-width: 60px;
+    min-width: 100px;
     height: 100%;
+    display: none;
   }
   .kfsi-header-back button {
     border: 0;
@@ -24027,7 +24042,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc(100% - 120px);
+    width: 100%;
     height: 100%;
     font-size: 16px;
     font-weight: bold;
@@ -24045,6 +24060,7 @@ body {
     background: url(../images/mo/icon/ico-header-home.svg) no-repeat 50% 50%;
     background-size: 16px 16px;
     font-size: 0;
+    display: none;
   }
   .kfsi-header-search {
     border: 0;
@@ -24053,69 +24069,59 @@ body {
     background: url(../images/mo/icon/ico-header-search.svg) no-repeat 50% 50%;
     background-size: 18px 18px;
     font-size: 0;
+    display: none;
+  }
+  .kfsi-header-logout {
+    border: 0;
+    width: 35px;
+    height: 35px;
+    background: url(../images/mo/icon/ico-header-logout.svg) no-repeat 50% 50%;
+    background-size: 35px 35px;
+    font-size: 0;
+    display: none;
   }
   .kfsi-header-menu__open {
-    position: absolute;
-    top: 13px;
-    right: 16px;
+    position: relative;
     display: block;
     width: 24px;
     height: 22px;
     background: url(../images/icon/ico-menu.svg) no-repeat 100% 50%;
     background-size: 18px 16px;
     font-size: 0;
-  }
-  .kfsi-header-sub {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    min-width: 100px;
-  }
-  .kfsi-header-button {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
-    min-width: 60px;
+    display: none;
   }
 }
 .kfsi--search .kfsi-header-head-search {
   display: block;
 }
 @media screen and (max-width: 3992px) {
-  .kfsi--main .kfsi-header-sub {
-    display: none;
-  }
-  .kfsi--main .kfsi-header-main {
-    display: flex;
+  .kfsi--main .kfsi-header-logo,
+  .kfsi--main .kfsi-header-menu__open {
+    display: block;
   }
 }
 @media screen and (max-width: 3992px) {
-  .kfsi--backup .kfsi-header-button {
-    display: none;
-  }
-  .kfsi--backup .kfsi-header-menu {
-    display: none;
-  }
-}
-.kfsi--backup-main .kfsi-header-title {
-  width: 100%;
-}
-@media screen and (max-width: 3992px) {
-  .kfsi--backup-main .kfsi-header-back,
-  .kfsi--backup-main .kfsi-header-button,
-  .kfsi--backup-main .kfsi-header-head-search {
-    display: none;
-  }
-  .kfsi--backup-main .kfsi-header-menu {
-    display: none;
+  .kfsi--sub .kfsi-header-back,
+  .kfsi--sub .kfsi-header-home,
+  .kfsi--sub .kfsi-header-search,
+  .kfsi--sub .kfsi-header-menu__open {
+    display: block;
   }
 }
 @media screen and (max-width: 3992px) {
-  .kfsi--work .kfsi-header-button {
-    display: none;
+  .kfsi--menu .kfsi-header-back,
+  .kfsi--menu .kfsi-header-menu__open {
+    display: block;
+  }
+}
+@media screen and (max-width: 3992px) {
+  .kfsi--logout .kfsi-header-logout {
+    display: block;
+  }
+}
+@media screen and (max-width: 3992px) {
+  .kfsi--back .kfsi-header-back {
+    display: block;
   }
 }
 .kfsi-footer {

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- swiper -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div id="headerMenu"></div>
+    <div class="kfsi kfsi--back">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <h1 class="hide">이동탱크 차량조회</h1>
+        <div class="kfsi-backup">
+          <div>
+            <div class="mb-6 p-4 fs-16 bg-light rounded-3">
+              * 이동탱크 차량조회는 소방청(소방민원정보시스템)의 자료입니다.
+            </div>
+            <h4 class="kfsi-h4">이동탱크 차량번호 조회</h4>
+            <div class="kfsi-board-write">
+              <table summary="">
+                <caption></caption>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <input
+                          type="text"
+                          class="form-control w-100"
+                          title="차량번호 전체 또는 뒤 4자리 입력"
+                          placeholder="차량번호 전체 또는 뒤 4자리 입력"
+                        />
+                        <button
+                          type="button"
+                          class="btn btn-secondary btn-lg rounded-2"
+                        >
+                          검색
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="mt-12">
+            <h4 class="kfsi-h4 mb-2">검색 결과</h4>
+            <div class="mb-1 fs-14 text-end">
+              조회건수 : <strong>1</strong>건
+            </div>
+            <div class="kfsi-backup-table">
+              <table class="table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">차량번호</th>
+                    <th scope="col">년식</th>
+                    <th scope="col">형식</th>
+                    <th scope="col">차종</th>
+                    <th scope="col">선택</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>000가 0000</td>
+                    <td>2025</td>
+                    <td>형식내용</td>
+                    <td>이동탱크 차종</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-dark">
+                        선택
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>000가 0000</td>
+                    <td>2025</td>
+                    <td>형식내용</td>
+                    <td>이동탱크 차종</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-dark">
+                        선택
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>000가 0000</td>
+                    <td>2025</td>
+                    <td>형식내용</td>
+                    <td>이동탱크 차종</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-dark">
+                        선택
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
