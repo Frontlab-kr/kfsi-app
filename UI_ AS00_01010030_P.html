@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- swiper -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+    <!-- flat -->
+    <script src="./assets/js/flatpickr.min.js"></script>
+    <script src="./assets/js/ko.js"></script>
+    <link rel="stylesheet" href="./assets/js/flatpickr.min.css" />
+    <!-- anypicker -->
+    <script src="./assets/js/anypicker.min.js"></script>
+    <link rel="stylesheet" href="./assets/js/anypicker.min.css" />
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>사이트 소개</h1>
+      <div class="main__title">
+        <p>
+          <strong>소방행정지원시스템</strong> 은<br />
+          한국소방안전원 보유정보에 대하여 인증된 사용자가 정보를 확인할 수 있는
+          사이트입니다.
+        </p>
+      </div>
+      <div class="main-menu">
+        <div class="main-menu-item">
+          <div class="main-menu-item__title">
+            <p>
+              안전관리자<br />
+              교육정보
+            </p>
+            <img src="./assets/images/main-img02.svg" alt="" />
+          </div>
+          <div class="main-menu-item__text">
+            자격취득정보 및 대상물 정보를 제공합니다.
+          </div>
+          <ul>
+            <li>자격/선임정보 조회</li>
+            <li>대상물정보 조회</li>
+            <li>관서별정보 조회</li>
+          </ul>
+        </div>
+        <div class="main-menu-item">
+          <div class="main-menu-item__title">
+            <p>소방교육</p>
+            <img src="./assets/images/main-img03.svg" alt="" />
+          </div>
+          <div class="main-menu-item__text">
+            다중이용업 및 의용소방대 교육 정보를 제공합니다.
+          </div>
+          <ul>
+            <li>다중이용업 소방교육</li>
+            <li>의용소방대 소방교육</li>
+          </ul>
+        </div>
+        <div class="main-menu-item">
+          <div class="main-menu-item__title">
+            <p>선해임관리</p>
+            <img src="./assets/images/main-img04.svg" alt="" />
+          </div>
+          <div class="main-menu-item__text">
+            소방안전관리(보조)자 선해임 정보를 제공합니다.
+          </div>
+          <ul>
+            <li>소방안전관리자 선해임</li>
+            <li>소방안전관리보조자 선해임</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <style>
+      .main {
+        padding: 30px;
+      }
+      .main h1 {
+        margin: 0 0 24px 0;
+        color: #000;
+        font-family: Pretendard;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 100% */
+      }
+      .main__title {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        height: 180px;
+        margin-bottom: 40px;
+        padding: 30px 60px;
+        border-radius: 20px;
+        background: #f7f7f7;
+      }
+      .main__title p {
+        margin: 0;
+        color: #000;
+        font-family: Pretendard;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+      }
+      .main__title::before {
+        content: '';
+        display: block;
+        width: 92px;
+        height: 120px;
+        background: url(./assets/images/main-img01.svg) no-repeat 50% 50%;
+      }
+      .main__title strong {
+        color: #0a60ac;
+        font-family: Pretendard;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 106.667% */
+      }
+      .main-menu {
+        display: flex;
+        gap: 20px;
+      }
+      .main-menu-item {
+        width: 100%;
+        padding: 0 0 30px 0;
+        border-radius: 20px 20px 0px 0px;
+        border: 1px solid #eee;
+        background: #fff;
+      }
+      .main-menu-item__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 120px;
+        padding: 20px 30px;
+        background: #f3f7fb;
+      }
+      .main-menu-item__title p {
+        margin: 0;
+        color: #000;
+        font-family: Pretendard;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px; /* 136.364% */
+      }
+      .main-menu-item__text {
+        padding: 30px 20px;
+        color: #0a60ac;
+        font-family: Pretendard;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 133.333% */
+      }
+      .main-menu-item ul {
+        margin: 0 20px;
+        padding: 0;
+      }
+      .main-menu-item ul li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0 0 0;
+        padding: 0;
+        color: #000;
+        font-family: Pretendard;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+      }
+      .main-menu-item ul li:first-child {
+        margin-top: 0;
+      }
+      .main-menu-item ul li::before {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #0a60ac;
+      }
+    </style>
+  </body>
+</html>
