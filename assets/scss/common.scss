@@ -872,6 +872,30 @@ body {
         font-size: 0;
         display: none;
       }
+      &-logout02 {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 8px;
+        color: #666;
+        border-radius: 16.5px;
+        border: 1px solid #ccc;
+        font-family: Pretendard;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 16.5px;
+        border: 1px solid #ccc;
+        &::before {
+          content: '';
+          display: block;
+          width: 12px;
+          height: 10px;
+          background: url(../images/mo/icon/ico-header-logout02.svg) no-repeat
+            50% 50%;
+        }
+      }
       &-menu {
         &__open {
           position: relative;
@@ -948,6 +972,13 @@ body {
       }
     }
   }
+  &--logout02 {
+    @media screen and (max-width: 3992px) {
+      .kfsi-header-logout02 {
+        display: flex;
+      }
+    }
+  }
   &--back {
     @media screen and (max-width: 3992px) {
       .kfsi-header-back {
@@ -955,7 +986,6 @@ body {
       }
     }
   }
-
 
   &-footer {
     position: relative;
@@ -13975,6 +14005,20 @@ body {
               font-weight: 400;
               line-height: 20px; /* 133.333% */
             }
+          }
+        }
+      }
+    }
+    &-menu {
+      margin: 30px 16px;
+      border-radius: 20px;
+      background: #f1f1f1;
+      .kfsi-header-menu {
+        &-list {
+          &-item {
+            gap: 28px;
+            height: 114px;
+            background: #fff;
           }
         }
       }
