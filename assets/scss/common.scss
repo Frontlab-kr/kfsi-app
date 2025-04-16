@@ -887,6 +887,7 @@ body {
         line-height: normal;
         border-radius: 16.5px;
         border: 1px solid #ccc;
+        display: none;
         &::before {
           content: '';
           display: block;

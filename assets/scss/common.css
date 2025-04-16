@@ -19364,10 +19364,12 @@ small, .small {
   background: #565656 !important;
 }
 .badge-outline-dark {
+  padding: 2px 8px;
   border: solid 1px #333;
   color: #333;
 }
 .badge-outline-primary {
+  padding: 2px 8px;
   border: 1px solid #ccc;
   background: #f3fff5;
   color: #000;
@@ -19378,6 +19380,7 @@ small, .small {
   line-height: 1.2;
 }
 .badge-outline-success {
+  padding: 2px 8px;
   border: 1px solid #ccc;
   background: #edf3ff;
   color: #000;
@@ -19388,6 +19391,7 @@ small, .small {
   line-height: 1.2;
 }
 .badge-outline-danger {
+  padding: 2px 8px;
   border: 1px solid #ccc;
   background: #fff4f4;
   color: #000;
@@ -19398,6 +19402,7 @@ small, .small {
   line-height: 1.2;
 }
 .badge-outline-warning {
+  padding: 2px 8px;
   border: 1px solid #ccc;
   background: #fff8e7;
   color: #000;
@@ -19408,6 +19413,7 @@ small, .small {
   line-height: 1.2;
 }
 .badge-outline-info {
+  padding: 2px 8px;
   border: 1px solid #ccc;
   background: #edf3ff;
   color: #000;
@@ -24095,6 +24101,7 @@ body {
     line-height: normal;
     border-radius: 16.5px;
     border: 1px solid #ccc;
+    display: none;
   }
   .kfsi-header-logout02::before {
     content: "";

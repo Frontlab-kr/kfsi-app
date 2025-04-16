@@ -382,10 +382,12 @@ small {
     background: #565656 !important;
   }
   &-outline-dark {
+    padding: 2px 8px;
     border: solid 1px #333;
     color: #333;
   }
   &-outline-primary {
+    padding: 2px 8px;
     border: 1px solid #ccc;
     background: #f3fff5;
     color: #000;
@@ -396,6 +398,7 @@ small {
     line-height: 1.2;
   }
   &-outline-success {
+    padding: 2px 8px;
     border: 1px solid #ccc;
     background: #edf3ff;
     color: #000;
@@ -406,6 +409,7 @@ small {
     line-height: 1.2;
   }
   &-outline-danger {
+    padding: 2px 8px;
     border: 1px solid #ccc;
     background: #fff4f4;
     color: #000;
@@ -416,6 +420,7 @@ small {
     line-height: 1.2;
   }
   &-outline-warning {
+    padding: 2px 8px;
     border: 1px solid #ccc;
     background: #fff8e7;
     color: #000;
@@ -426,6 +431,7 @@ small {
     line-height: 1.2;
   }
   &-outline-info {
+    padding: 2px 8px;
     border: 1px solid #ccc;
     background: #edf3ff;
     color: #000;
