@@ -36946,6 +36946,116 @@ body {
 .kfsi-user-detail-list ul li:first-child {
   margin: 0;
 }
+.kfsi-user-detail-seat-head {
+  margin-bottom: 40px;
+}
+.kfsi-user-detail-seat-head__title {
+  color: #000;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.kfsi-user-detail-seat-head__title strong {
+  color: #004d16;
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.kfsi-user-detail-seat-head p {
+  margin: 10px 0 0 0;
+  color: #666;
+  font-family: Pretendard;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+.kfsi-user-detail-seat-body {
+  margin-bottom: 30px;
+}
+.kfsi-user-detail-seat-body-head {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+.kfsi-user-detail-seat-body-head p {
+  display: flex;
+  gap: 5px;
+  margin: 0;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+.kfsi-user-detail-seat-body-head p span {
+  display: flex;
+  align-items: center;
+  height: 26px;
+  padding: 4px 6px;
+  border-radius: 2px;
+  border: 1px solid #999;
+  background: #fff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+}
+.kfsi-user-detail-seat-body-stage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 6px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  background: #fff;
+}
+.kfsi-user-detail-seat-body-stage span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #f6f6f6;
+  color: #ccc;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.kfsi-user-detail-seat-body-stage span.active {
+  background: #fdedce;
+  color: #000;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.kfsi-user-detail-seat-body-stage span.possible {
+  background-color: #fff;
+  color: #d93600;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .kfsi-user-button {
   padding: 0 16px;
 }
