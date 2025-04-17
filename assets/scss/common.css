@@ -37019,6 +37019,8 @@ body {
   border-radius: 10px;
   border: 1px solid #eee;
   background: #fff;
+  height: 500px;
+  overflow: auto;
 }
 .kfsi-user-detail-seat-body-stage span {
   display: flex;
