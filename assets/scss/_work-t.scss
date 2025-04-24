@@ -544,6 +544,10 @@ html {
   @media screen and (max-width: $mobileWidth-t) {
     padding: 0 16px;
   }
+  &-home {
+    position: relative;
+    z-index: 20;
+  }
   &-tit {
     position: absolute;
     left: 50%;
@@ -613,6 +617,13 @@ html {
     width: 34px;
     height: 34px;
     background-image: url(../images/tablet/ico-home.svg);
+  }
+  .btn-logo {
+    display: block;
+    width: 126px;
+    height: 30px;
+    background-image: url(../images/tablet/logo.svg);
+    font-size: 0;
   }
   .btn-close {
     display: none;

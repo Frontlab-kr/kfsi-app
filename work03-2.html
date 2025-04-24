@@ -10,9 +10,6 @@
     <!-- bootstrap -->
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
-
-    <!-- swiper -->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
     <!-- js -->
     <script src="./assets/js/common.js"></script>
 
@@ -20,209 +17,1016 @@
     <link rel="stylesheet" href="./assets/scss/common.css" />
   </head>
   <body>
-    <div class="kfsi-work">
-      <div class="kfsi-work-head">
-        <h1>
-          <i class="work-home"></i>
-          <p><strong>홍길동</strong> 교수님의 강의목록</p>
-        </h1>
+    <div class="kfsi--wrap-t sub-wrap">
+      <div id="skip">
+        <a href="#kfsi-body">본문 내용 바로가기</a>
       </div>
-      <div class="kfsi-work-info">
-        <div class="kfsi-work-info-text">
-          <p>
-            <strong>
-              1급소방안전관리자<span class="text-primary">(혼용)</span>
-            </strong>
-          </p>
-          <p>전북지부</p>
-          <p>집합교육 : 2025.04.14~2025.04.18 (09:00~18:00)</p>
+
+      <!-- header -->
+      <header class="kfsi-header-t">
+        <div class="kfsi-header-t-home">
+          <!-- <a href="/" class="btn-home">home</a> -->
+          <a href="/" class="btn-back">back</a>
         </div>
-        <div class="kfsi-work-info-time">
-          <p>
-            출석 인증 번호 유효시간 : <span class="text-danger">58:19</span>
-            <i class="work-time"></i>
-          </p>
+        <div class="kfsi-header-t-tit"></div>
+        <div class="kfsi-header-t-util">
+          <a
+            href="javascript:void(0);$('html').addClass('active-menu')"
+            class="btn-menu"
+            >menu</a
+          >
         </div>
-      </div>
-      <div class="kfsi-work-body">
-        <div class="kfsi-tab02">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="tab01"
-                data-bs-toggle="tab"
-                data-bs-target="#tab01-pane"
-                type="button"
-                role="tab"
-                aria-controls="tab01-pane"
-                aria-selected="true"
-              >
-                출석 체크
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link active"
-                id="tab02"
-                data-bs-toggle="tab"
-                data-bs-target="#tab02-pane"
-                type="button"
-                role="tab"
-                aria-controls="tab02-pane"
-                aria-selected="false"
-              >
-                출결 현황
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="tab03"
-                data-bs-toggle="tab"
-                data-bs-target="#tab03-pane"
-                type="button"
-                role="tab"
-                aria-controls="tab03-pane"
-                aria-selected="false"
-              >
-                자리이동 관리
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="tab04"
-                data-bs-toggle="tab"
-                data-bs-target="#tab04-pane"
-                type="button"
-                role="tab"
-                aria-controls="tab04-pane"
-                aria-selected="false"
-              >
-                외출 관리
-              </button>
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div
-              class="tab-pane fade"
-              id="tab01-pane"
-              role="tabpanel"
-              aria-labelledby="tab01"
-              tabindex="0"
-            >
-              ...
+      </header>
+      <!-- //header -->
+      <script>
+        $(document).ready(function () {
+          //header title
+          $('.kfsi-header-t-tit').html($('h1').html());
+        });
+      </script>
+
+      <div id="kfsi-body">
+        <h1 class="hide"><strong>강의상세</strong></h1>
+        <div class="kfsi-work">
+          <div class="kfsi-work-info">
+            <div class="kfsi-work-info-text">
+              <p>
+                <strong>
+                  1급소방안전관리자<span class="text-primary">(혼용)</span>
+                </strong>
+              </p>
+              <p>전북지부</p>
+              <p>집합교육 : 2025.04.14~2025.04.18 (09:00~18:00)</p>
+              <p>021회차</p>
             </div>
-            <div
-              class="tab-pane fade show active"
-              id="tab02-pane"
-              role="tabpanel"
-              aria-labelledby="tab02"
-              tabindex="0"
-            >
-              <div class="kfsi-work-attend">
-                <div class="kfsi-work-attend-head">
-                  <div class="kfsi-work-attend-head-title">
-                    <p><strong>3</strong>일차 (04/16)</p>
-                    <p><strong>3</strong>교시 (11:00~)</p>
-                  </div>
+            <!-- <div class="kfsi-work-info-time">
+              <p>
+                출석 인증 번호 유효시간 : <span class="text-danger">58:19</span>
+              </p>
+            </div> -->
+          </div>
+          <div class="kfsi-work-body">
+            <div class="kfsi-tab02">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
                   <button
+                    class="nav-link active"
+                    id="tab01"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab01-pane"
                     type="button"
-                    class="btn btn-lg btn-outline-secondary"
-                    style="width: 120px"
+                    role="tab"
+                    aria-controls="tab01-pane"
+                    aria-selected="false"
                   >
-                    목록
+                    출결 현황
                   </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="tab02"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab02-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="tab02-pane"
+                    aria-selected="false"
+                  >
+                    자리이동 현황
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="tab03"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab03-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="tab03-pane"
+                    aria-selected="false"
+                  >
+                    외출 현황
+                  </button>
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-sm btn-secondary position-absolute"
+                style="top: 10px; right: 16px"
+              >
+                <i class="ico-refrash"></i> 페이지 새로고침
+              </button>
+              <div class="kfsi-work-attendance">
+                <div class="kfsi-work-attendance-head">
+                  <p>3일차(04/16)</p>
+                  <p>3교시(11:00~)</p>
                 </div>
-                <div class="kfsi-work-attend-body">
-                  <div class="kfsi-work-attend-key">
-                    <span class="active">1</span>
-                    <span>2</span>
-                    <span>3</span>
-                    <span class="active">4</span>
-                    <span>5</span>
-                    <span>6</span>
-                    <span>7</span>
-                    <span class="active">8</span>
-                    <span>9</span>
-                    <span>10</span>
-                    <span class="active">11</span>
-                    <span class="active">12</span>
-                    <span class="active">13</span>
-                    <span>14</span>
-                    <span>15</span>
-                    <span>16</span>
-                    <span>17</span>
-                    <span>18</span>
-                    <span>19</span>
-                    <span>20</span>
-                    <span>21</span>
-                    <span>22</span>
-                    <span>23</span>
-                    <span class="active">24</span>
-                    <span class="active">25</span>
-                    <span>26</span>
-                    <span>27</span>
-                    <span>28</span>
-                    <span>29</span>
-                    <span>30</span>
-                    <span class="active">31</span>
-                    <span class="active">32</span>
-                    <span class="active">33</span>
-                    <span class="active">34</span>
-                    <span>35</span>
-                    <span>36</span>
-                    <span>37</span>
-                    <span>38</span>
-                    <span>39</span>
-                    <span>40</span>
-                    <span>41</span>
-                    <span>42</span>
-                    <span>43</span>
-                    <span>44</span>
-                    <span class="active">45</span>
-                    <span class="active">46</span>
-                    <span class="active">47</span>
-                    <span>48</span>
-                    <span>49</span>
-                    <span class="active">50</span>
-                    <span>51</span>
-                    <span>52</span>
-                    <span>53</span>
-                    <span>54</span>
+                <div class="kfsi-work-attendance-body">
+                  <div class="kfsi-work-attendance-seat">
+                    <div
+                      class="kfsi-work-attendance-seat-inner"
+                      style="grid-template-columns: repeat(8, 1fr)"
+                    >
+                      <div class="kfsi-work-attendance-seat-item active">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          1
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          2
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          3
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          4
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          5
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          6
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          7
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          8
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          9
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item active">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          10
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item active">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          11
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item active">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          12
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          13
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          14
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          15
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          16
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          17
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item active">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          18
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item active">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          19
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item active">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          20
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          21
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          22
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          23
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          24
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          25
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          26<strong class="fs-15 text-danger">(외출)</strong>
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          27
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          28
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          29
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          30
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          31
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          32
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          33
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          34
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          35
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          36
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          37
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item active">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          38
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          39
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          40
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          41
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          42
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          43
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          44
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          45
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          46
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          47
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          48
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          49
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          50
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          51
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          52
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          53
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          54
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          55
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          56
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          57
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          58
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          59
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          60
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          61
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          62
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          63
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          64
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          65
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          66
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          67
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          68
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          69
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                      <div class="kfsi-work-attendance-seat-item">
+                        <div class="kfsi-work-attendance-seat-item__number">
+                          70
+                        </div>
+                        <div class="kfsi-work-attendance-seat-item__name">
+                          홍길동
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="kfsi-work-attend-number">
-                    <strong>출석 인증숫자</strong>
-                    <p>
-                      <span>0</span>
-                      <span>0</span>
-                      <span>0</span>
-                    </p>
+                  <div class="kfsi-work-attendance-menu">
+                    <div class="kfsi-work-attendance-menu-number">
+                      <strong>현재 저장된 출석 인증숫자</strong>
+                      <div class="kfsi-work-attendance-menu-number__title">
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                      </div>
+                      <div class="kfsi-work-attendance-menu-number__button">
+                        <p>
+                          <button class="btn btn-sm btn-outline-dark w-100">
+                            랜덤 숫자 생성
+                          </button>
+                          <button class="btn btn-sm btn-outline-dark w-100">
+                            숫자 수동 입력
+                          </button>
+                        </p>
+                        <button class="btn btn-lg btn-primary w-100">
+                          인증숫자 저장하기
+                        </button>
+                      </div>
+                    </div>
+                    <div class="kfsi-work-attendance-menu-button">
+                      <p>
+                        <button>
+                          출석체크 <span class="text-danger">시작</span>
+                        </button>
+                        <button>
+                          출석체크 <span class="text-info">종료</span>
+                        </button>
+                      </p>
+                      <button class="btn btn-lg btn-outline-dark w-100">
+                        전원 출석으로 일괄 체크
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div
-              class="tab-pane fade"
-              id="tab03-pane"
-              role="tabpanel"
-              aria-labelledby="tab03"
-              tabindex="0"
-            >
-              ...
+          </div>
+        </div>
+      </div>
+
+      <div
+        style="
+          position: fixed;
+          bottom: 0;
+          right: 0;
+          padding: 10px;
+          background: rgba(0, 0, 0, 0.3);
+          z-index: 5000;
+        "
+      >
+        <div>
+          <button
+            type="button"
+            class="btn btn-primary btn-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#alert01"
+          >
+            업무용앱 alert (1)
+          </button>
+        </div>
+
+        <div class="mt-1">
+          <button
+            type="button"
+            class="btn btn-primary btn-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#alert02"
+          >
+            업무용앱 alert (2)
+          </button>
+        </div>
+
+        <div class="mt-1">
+          <button
+            type="button"
+            class="btn btn-primary btn-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#alert03"
+          >
+            업무용앱 alert (3)
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="alert01"
+        tabindex="-1"
+        aria-labelledby="alert01Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered kfsi-alert">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
-            <div
-              class="tab-pane fade"
-              id="tab04-pane"
-              role="tabpanel"
-              aria-labelledby="tab04"
-              tabindex="0"
-            >
-              ...
+            <div class="modal-body">
+              <p>
+                대민앱 연동 출석 체크를 시작하시겠습니까?<br />
+                활성화된 출석체크 기능은 1시간 단위로 자동 종료됩니다.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-lg btn-outline-secondary">
+                취소
+              </button>
+              <button type="button" class="btn btn-lg btn-primary">확인</button>
             </div>
           </div>
         </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="alert02"
+        tabindex="-1"
+        aria-labelledby="alert01Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered kfsi-alert">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>출석 인증숫자가 저장되었습니다.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-lg btn-primary">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="alert03"
+        tabindex="-1"
+        aria-labelledby="alert01Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered kfsi-alert">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                <strong>2025/04/16일 3교시</strong> 모든 수강생의 출석을
+                출석으로 등록하시겠습니까?
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-lg btn-outline-secondary">
+                취소
+              </button>
+              <button type="button" class="btn btn-lg btn-primary">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="kfsi-menu">
+        <div class="kfsi-menu-head">
+          <a href="" class="btn-home">home</a>
+          <a
+            href="javascript:void(0);$('html').removeClass('active-menu')"
+            class="kfsi-menu-head-close"
+            >close</a
+          >
+        </div>
+        <!-- nav -->
+        <nav class="kfsi-nav-t">
+          <div class="nav-depth00">
+            <ul>
+              <li><a href="">행정업무</a></li>
+              <li><a href="">점검업무</a></li>
+              <li class="on"><a href="">교육업무</a></li>
+              <li><a href="">전자민원서식</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+              <li><a href="">공지사항</a></li>
+            </ul>
+            <button type="button" class="btn-logout">로그아웃</button>
+          </div>
+
+          <div class="nav-depth01">
+            <div class="nav-depth01-item on">
+              <h2 class="nav-depth01-tit">교육업무</h2>
+              <div class="nav-depth02">
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">
+                    강습관리 강습관리 강습관리 강습관리 강습관리 강습관리
+                    강습관리 강습관리 강습관리
+                  </h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">출석체크</a></li>
+                    <li><a href="">출결 현황</a></li>
+                    <li><a href="">자리이동 관리</a></li>
+                    <li><a href="">외출 관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li>
+                      <a href="">시험결과 채점관리채점관리채점관리채점관리</a>
+                    </li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="nav-depth01-item">
+              <h2 class="nav-depth01-tit">교육업무</h2>
+              <div class="nav-depth02">
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">강습관리</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">출석체크</a></li>
+                    <li><a href="">출결 현황</a></li>
+                    <li><a href="">자리이동 관리</a></li>
+                    <li><a href="">외출 관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                    <li>
+                      <a href="">시험결과 채점관리채점관리채점관리채점관리</a>
+                    </li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+                <div class="nav-depth02-item">
+                  <h3 class="nav-depth02-tit">자격시험</h3>
+                  <ul class="nav-depth02-link">
+                    <li><a href="">시험응시자목록 (좌석표) 관리</a></li>
+                    <li><a href="">출석 체크</a></li>
+                    <li><a href="">부정행위자 관리</a></li>
+                    <li><a href="">중도퇴실자 관리</a></li>
+                    <li><a href="">시험결과 채점관리</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- //nav -->
       </div>
     </div>
   </body>
