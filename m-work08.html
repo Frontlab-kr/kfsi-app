@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- swiper -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+    <!-- flat -->
+    <script src="./assets/js/flatpickr.min.js"></script>
+    <script src="./assets/js/ko.js"></script>
+    <link rel="stylesheet" href="./assets/js/flatpickr.min.css" />
+    <!-- anypicker -->
+    <script src="./assets/js/anypicker.min.js"></script>
+    <link rel="stylesheet" href="./assets/js/anypicker.min.css" />
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div id="headerMenu"></div>
+    <div class="kfsi kfsi--menu">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <h1 class="hide">부재 설정</h1>
+        <div style="padding: 30px 16px 60px">
+          <div class="mb-10">
+            <h4 class="kfsi-h4">부재 일정 설정하기</h4>
+            <div class="kfsi-board-write">
+              <table summary="">
+                <caption></caption>
+                <colgroup>
+                  <col style="width: 110px" />
+                  <col style="" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row">시작일</th>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control w-100 date-picker-input"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal01"
+                        title="시작일"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">종료일</th>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control w-100 date-picker-input"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal01"
+                        title="종료일"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">사유</th>
+                    <td>
+                      <div class="py-2">
+                        <textarea
+                          class="form-control w-100"
+                          style="height: 136px"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="kfsi-button">
+              <p>
+                <button type="button" class="btn btn-lg btn-primary">
+                  부재 일정 등록하기
+                </button>
+              </p>
+            </div>
+          </div>
+          <div>
+            <h4 class="kfsi-h4">설정한 부재 일정</h4>
+            <p class="fs-14">
+              ※ 설정된 부재기간 동안 전자결제 라인에서 제외 됩니다.<br />
+              ※ 등록된 부재 목록은 최근 5 건 까지 조회됩니다.
+            </p>
+            <div class="kfsi-table">
+              <table>
+                <caption></caption>
+                <colgroup>
+                  <col style="width: 80px" />
+                  <col style="width: 80px" />
+                  <col style="width: 158px" />
+                  <col style="width: 40px" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">시작일</th>
+                    <th scope="col">종료일</th>
+                    <th scope="col">사유</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2025. 07.07</td>
+                    <td>2025. 07.11</td>
+                    <td>개인사유로 해당 기간 결재를 못합니다.</td>
+                    <td>
+                      <button class="border-0 bg-transparent">
+                        <i class="ico-delete4"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2025. 07.07</td>
+                    <td>2025. 07.11</td>
+                    <td>개인사유로 해당 기간 결재를 못합니다.</td>
+                    <td>
+                      <button class="border-0 bg-transparent">
+                        <i class="ico-delete4"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2025. 07.07</td>
+                    <td>2025. 07.11</td>
+                    <td>개인사유로 해당 기간 결재를 못합니다.</td>
+                    <td>
+                      <button class="border-0 bg-transparent">
+                        <i class="ico-delete4"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2025. 07.07</td>
+                    <td>2025. 07.11</td>
+                    <td>개인사유로 해당 기간 결재를 못합니다.</td>
+                    <td>
+                      <button class="border-0 bg-transparent">
+                        <i class="ico-delete4"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal01"
+      tabindex="-1"
+      aria-labelledby="alert01Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered kfsi-modal-calendar">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="modal-body">
+            <div class="date-picker-inline">
+              <input type="text" class="form-control w-100" />
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  let activeInput = null;
+                  let selectedDate = ''; // ✅ 선택한 날짜를 저장할 변수
+
+                  // 모든 date-picker-input 요소에 클릭 이벤트 추가
+                  document
+                    .querySelectorAll('.date-picker-input')
+                    .forEach((input) => {
+                      input.addEventListener('click', function () {
+                        activeInput = this; // ✅ 현재 클릭된 input 저장
+                      });
+                    });
+
+                  // Flatpickr 적용 (모달 내 달력)
+                  const calendar = document
+                    .querySelector('.date-picker-inline .form-control')
+                    .flatpickr({
+                      locale: 'ko',
+                      inline: true,
+                      onDayCreate: function (dObj, dStr, fp, dayElem) {
+                        if (
+                          dayElem.classList.contains('prevMonthDay') ||
+                          dayElem.classList.contains('nextMonthDay')
+                        ) {
+                          return;
+                        }
+                        const date = new Date(dayElem.dateObj);
+                        const day = date.getDay();
+                        if (day === 0) {
+                          dayElem.classList.add('sunday');
+                        } else if (day === 6) {
+                          dayElem.classList.add('saturday');
+                        }
+                      },
+                      onChange: function (selectedDates, dateStr, instance) {
+                        selectedDate = dateStr; // ✅ "선택" 버튼을 눌렀을 때 적용될 날짜 저장
+                      },
+                    });
+
+                  // ✅ "선택" 버튼이 존재하는지 확인 후 이벤트 추가 (이벤트 위임 방식)
+                  document.body.addEventListener('click', function (event) {
+                    if (
+                      event.target &&
+                      event.target.classList.contains('btn-apply-date')
+                    ) {
+                      if (activeInput && selectedDate) {
+                        activeInput.value = selectedDate; // ✅ 선택한 날짜를 activeInput에 적용
+                      }
+                    }
+                  });
+                });
+              </script>
+            </div>
+          </div>
+          <div class="modal-footer mt-5 p-0">
+            <button
+              type="button"
+              class="btn btn-lg btn-outline-secondary"
+              style="min-width: 140px"
+              data-bs-dismiss="modal"
+            >
+              취소
+            </button>
+            <button
+              type="button"
+              class="btn btn-lg btn-primary btn-apply-date"
+              style="min-width: 140px"
+              data-bs-dismiss="modal"
+            >
+              선택
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $('.time-picker-input').AnyPicker({
+          mode: 'datetime',
+          dateTimeFormat: 'AA hh:mm',
+        });
+      });
+    </script>
+  </body>
+</html>
