@@ -55,9 +55,21 @@
               </h4>
               <div class="kfsi-user-attend-number">
                 <div class="kfsi-user-attend-number-input">
-                  <input type="text" maxlength="1" />
-                  <input type="text" maxlength="1" />
-                  <input type="text" maxlength="1" />
+                  <input
+                    type="text"
+                    maxlength="1"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                  />
+                  <input
+                    type="text"
+                    maxlength="1"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                  />
+                  <input
+                    type="text"
+                    maxlength="1"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                  />
                 </div>
                 <p class="mx-6 text-center">
                   ※ 앱을 이용한 출석처리가 원활하지 못할 경우, 교육현장에 있는
