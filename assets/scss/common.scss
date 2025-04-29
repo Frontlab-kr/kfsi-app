@@ -13980,7 +13980,8 @@ body {
             justify-content: center;
             gap: 20px;
             margin-bottom: 16px;
-            span {
+            span,
+            input {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -13996,6 +13997,7 @@ body {
               font-style: normal;
               font-weight: 700;
               line-height: normal;
+              text-align: center;
             }
           }
           &__button {

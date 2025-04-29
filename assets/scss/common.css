@@ -36433,7 +36433,8 @@ body {
   gap: 20px;
   margin-bottom: 16px;
 }
-.kfsi-work-attendance-menu-number__title span {
+.kfsi-work-attendance-menu-number__title span,
+.kfsi-work-attendance-menu-number__title input {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36449,6 +36450,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-align: center;
 }
 .kfsi-work-attendance-menu-number__button p {
   display: flex;
