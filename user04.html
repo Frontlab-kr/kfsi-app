@@ -78,11 +78,19 @@
                         1교시<br />
                         <span class="text-666"> (09:00~) </span>
                       </th>
-                      <td>
-                        <span class="badge badge-outline-dark">출석</span>
+                      <td style="background: #fdf8e1">
+                        <span
+                          class="badge"
+                          style="background: #eeba0b; color: #fff"
+                          >지각</span
+                        >
                       </td>
-                      <td class="bg-warning-subtle">
-                        <span class="badge text-bg-danger">결강</span>
+                      <td style="background: #fdedce">
+                        <span
+                          class="badge"
+                          style="background: #d93600; color: #fff"
+                          >결강</span
+                        >
                       </td>
                       <td>
                         <span class="badge badge-outline-dark">출석</span>
@@ -98,8 +106,12 @@
                       <td>
                         <span class="badge badge-outline-dark">출석</span>
                       </td>
-                      <td class="bg-warning-subtle">
-                        <span class="badge text-bg-danger">결강</span>
+                      <td style="background: #fdedce">
+                        <span
+                          class="badge"
+                          style="background: #d93600; color: #fff"
+                          >결강</span
+                        >
                       </td>
                       <td>
                         <span class="badge badge-outline-dark">출석</span>
@@ -115,8 +127,12 @@
                       <td>
                         <span class="badge badge-outline-dark">출석</span>
                       </td>
-                      <td class="bg-warning-subtle">
-                        <span class="badge text-bg-danger">결강</span>
+                      <td style="background: #fdedce">
+                        <span
+                          class="badge"
+                          style="background: #d93600; color: #fff"
+                          >결강</span
+                        >
                       </td>
                       <td>
                         <span class="badge badge-outline-dark">출석</span>
@@ -132,8 +148,12 @@
                       <td>
                         <span class="badge badge-outline-dark">출석</span>
                       </td>
-                      <td class="bg-warning-subtle">
-                        <span class="badge text-bg-danger">결강</span>
+                      <td style="background: #fdedce">
+                        <span
+                          class="badge"
+                          style="background: #d93600; color: #fff"
+                          >결강</span
+                        >
                       </td>
                       <td class="bg-secondary-subtle"></td>
                       <td class="bg-secondary-subtle"></td>
@@ -147,8 +167,12 @@
                       <td>
                         <span class="badge badge-outline-dark">출석</span>
                       </td>
-                      <td class="bg-warning-subtle">
-                        <span class="badge text-bg-danger">결강</span>
+                      <td style="background: #fdedce">
+                        <span
+                          class="badge"
+                          style="background: #d93600; color: #fff"
+                          >결강</span
+                        >
                       </td>
                       <td class="bg-secondary-subtle"></td>
                       <td class="bg-secondary-subtle"></td>
@@ -162,8 +186,12 @@
                       <td>
                         <span class="badge badge-outline-dark">출석</span>
                       </td>
-                      <td class="bg-warning-subtle">
-                        <span class="badge text-bg-danger">결강</span>
+                      <td style="background: #fdedce">
+                        <span
+                          class="badge"
+                          style="background: #d93600; color: #fff"
+                          >결강</span
+                        >
                       </td>
                       <td class="bg-secondary-subtle"></td>
                       <td class="bg-secondary-subtle"></td>
@@ -177,8 +205,12 @@
                       <td>
                         <span class="badge badge-outline-dark">출석</span>
                       </td>
-                      <td class="bg-warning-subtle">
-                        <span class="badge text-bg-danger">결강</span>
+                      <td style="background: #fdedce">
+                        <span
+                          class="badge"
+                          style="background: #d93600; color: #fff"
+                          >결강</span
+                        >
                       </td>
                       <td class="bg-secondary-subtle"></td>
                       <td class="bg-secondary-subtle"></td>
@@ -192,8 +224,12 @@
                       <td>
                         <span class="badge badge-outline-dark">출석</span>
                       </td>
-                      <td class="bg-warning-subtle">
-                        <span class="badge text-bg-danger">결강</span>
+                      <td style="background: #fdedce">
+                        <span
+                          class="badge"
+                          style="background: #d93600; color: #fff"
+                          >결강</span
+                        >
                       </td>
                       <td class="bg-secondary-subtle"></td>
                       <td class="bg-secondary-subtle"></td>
@@ -380,6 +416,17 @@
           업무용앱 alert (4)
         </button>
       </div>
+
+      <div class="mt-1">
+        <button
+          type="button"
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#alert05"
+        >
+          업무용앱 alert (5)
+        </button>
+      </div>
     </div>
 
     <div
@@ -497,6 +544,43 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-lg btn-primary">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="alert05"
+      tabindex="-1"
+      aria-labelledby="alert01Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered kfsi-alert">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              입력하신 외출 시간의 합이 결격 기준을 초과하여 저장이 어렵습니다.
+              <br />
+              해당 교육의 결격처리시간을 확인 후 <br />
+              시도해 주세요.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-lg btn-primary"
+              data-bs-dismiss="modal"
+            >
+              확인
+            </button>
           </div>
         </div>
       </div>
