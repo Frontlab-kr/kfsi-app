@@ -13547,12 +13547,13 @@ body {
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
+      gap: 10px;
       border-radius: 10px;
       border: 1px solid #f1f1f1;
       background: #f6f6f6;
       min-height: 72px;
       margin-top: 14px;
-      padding: 0 20px;
+      padding: 16px 20px;
       &-text {
         display: flex;
         align-items: center;
