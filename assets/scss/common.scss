@@ -6837,7 +6837,7 @@ body {
       &-item {
       }
     }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 92px) {
       > .nav {
         display: flex;
         flex-wrap: nowrap;
@@ -13510,7 +13510,7 @@ body {
     }
   }
   &-work {
-    min-width: 1240px;
+    //min-width: 1240px;
     padding: 24px;
     &-head {
       display: flex;
@@ -13546,15 +13546,17 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
       border-radius: 10px;
       border: 1px solid #f1f1f1;
       background: #f6f6f6;
-      height: 72px;
+      min-height: 72px;
       margin-top: 14px;
       padding: 0 20px;
       &-text {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         p {
           display: flex;
           align-items: center;

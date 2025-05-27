@@ -21958,6 +21958,7 @@ html.active-menu .kfsi-menu {
 }
 .kfsi-sub-cont-table {
   border-top: 2px solid #004d16;
+  overflow: auto;
 }
 .kfsi-sub-cont-table table {
   border-top: 0 !important;
@@ -29704,7 +29705,7 @@ body {
   line-height: normal;
   letter-spacing: 0.54px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 92px) {
   .kfsi-tab02 > .nav {
     display: flex;
     flex-wrap: nowrap;
@@ -35995,7 +35996,6 @@ body {
   margin: 0;
 }
 .kfsi-work {
-  min-width: 1240px;
   padding: 24px;
 }
 .kfsi-work-head {
@@ -36032,16 +36032,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   border-radius: 10px;
   border: 1px solid #f1f1f1;
   background: #f6f6f6;
-  height: 72px;
+  min-height: 72px;
   margin-top: 14px;
   padding: 0 20px;
 }
 .kfsi-work-info-text {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .kfsi-work-info-text p {
   display: flex;
