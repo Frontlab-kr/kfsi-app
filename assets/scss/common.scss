@@ -14924,6 +14924,9 @@ body {
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+                &.selected {
+                  border: 2px solid #d93600;
+                }
               }
             }
           }

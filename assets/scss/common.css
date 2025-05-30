@@ -37331,6 +37331,9 @@ body {
   font-weight: 400;
   line-height: normal;
 }
+.kfsi-user-detail-seat-body-stage span.possible.selected {
+  border: 2px solid #d93600;
+}
 .kfsi-user-button {
   padding: 0 16px;
 }
