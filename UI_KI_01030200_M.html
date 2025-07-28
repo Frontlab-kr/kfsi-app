@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/kiosk.css" />
+
+    <script>
+      function receiptPrinting() {
+        $('.kfsi-kiosk-loading').addClass('active');
+        setTimeout(() => {
+          $('.kfsi-kiosk-loading').removeClass('active');
+        }, 1000);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="kfsi-kiosk">
+      <div class="kfsi-kiosk-contents" style="height: calc(100vh - 396px)">
+        <header>한국소방안전원 민원 키오스크</header>
+
+        <div class="kfsi-kiosk-table">
+          <div class="kfsi-kiosk-table__text">
+            실무교육 수료내역을 확인 후 수료확인증을 출력하실 수 있습니다.
+            <span
+              >(소방안전관리자, 위험물안전관리자, 위험물운송자는 사이버교육과
+              집합교육을 모두 수료하셔야 출력이 가능합니다.)</span
+            >
+          </div>
+          <div class="kfsi-kiosk-table-item">
+            <h4>실무교육 수료 내역</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th>업체/대상물명</th>
+                  <th>직능</th>
+                  <th>교육일자</th>
+                  <th>수료영수증</th>
+                </tr>
+              </thead>
+              
+              <tbody>
+                <tr>
+                  <td colspan="4">조회된 내역이 없습니다.</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              실무교육 수료 내역은 최근 4년치까지 출력 가능합니다. <br />
+              그 외 내역은 소방안전24 홈페이지를 이용해 주세요.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="kfsi-kiosk-foot">
+        <div class="kfsi-kiosk-button">
+          <button type="button" class="btn btn-primary" style="width: 100%">
+            종료하기
+          </button>
+        </div>
+        <p>
+          이용을 마치셨다면 개인정보 보호를 위해 ‘종료하기’ 버튼을
+          눌러주세요.<br />
+          30초 동안 조작이 없으면 자동으로 종료됩니다.
+        </p>
+      </div>
+    </div>
+    <div class="kfsi-kiosk-loading">
+      <p><span>영수증을 출력 중 입니다. 잠시만 기다려 주세요.</span></p>
+    </div>
+  </body>
+</html>

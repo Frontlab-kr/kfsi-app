@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/kiosk.css" />
+
+    <script>
+      function receiptPrinting() {
+        $('.kfsi-kiosk-loading').addClass('active');
+        setTimeout(() => {
+          $('.kfsi-kiosk-loading').removeClass('active');
+        }, 1000);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="kfsi-kiosk">
+      <div class="kfsi-kiosk-contents" style="height: calc(100vh - 396px)">
+        <header>한국소방안전원 민원 키오스크</header>
+
+        <div class="kfsi-kiosk-table">
+          <div class="kfsi-kiosk-table__text">
+            강습교육 수료내역을 확인 후 수료증을 출력하실 수 있습니다.
+          </div>
+          <div class="kfsi-kiosk-table-item">
+            <h4>강습교육 수료 내역</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th>수강번호</th>
+                  <th>교육과정</th>
+                  <th>지부</th>
+                  <th>교육일자</th>
+                  <th>수료증</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>000-112</td>
+                  <td>1급 소방안전 관리자</td>
+                  <td>대전충남</td>
+                  <td>2023.08.21 ~08.28</td>
+                  <td>
+                    <button type="button" onclick="receiptPrinting()">
+                      출력
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>000-112</td>
+                  <td>1급 소방안전 관리자</td>
+                  <td>대전충남</td>
+                  <td>2023.08.21 ~08.28</td>
+                  <td>
+                    <button type="button" onclick="receiptPrinting()">
+                      출력
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p>영문, 중문 수료증이 필요하신 경우, 민원센터를 이용해 주세요.</p>
+          </div>
+        </div>
+      </div>
+      <div class="kfsi-kiosk-foot">
+        <div class="kfsi-kiosk-button">
+          <button type="button" class="btn btn-primary" style="width: 100%">
+            종료하기
+          </button>
+        </div>
+        <p>
+          이용을 마치셨다면 개인정보 보호를 위해 ‘종료하기’ 버튼을
+          눌러주세요.<br />
+          30초 동안 조작이 없으면 자동으로 종료됩니다.
+        </p>
+      </div>
+    </div>
+    <div class="kfsi-kiosk-loading">
+      <p><span>영수증을 출력 중 입니다. 잠시만 기다려 주세요.</span></p>
+    </div>
+  </body>
+</html>

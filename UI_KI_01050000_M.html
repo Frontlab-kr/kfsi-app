@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/kiosk.css" />
+
+    <script>
+      function receiptPrinting() {
+        $('.kfsi-kiosk-loading').addClass('active');
+        setTimeout(() => {
+          $('.kfsi-kiosk-loading').removeClass('active');
+        }, 1000);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="kfsi-kiosk">
+      <div class="kfsi-kiosk-error">
+        <div class="kfsi-kiosk-error__status">
+          <p>일시적인 오류가 발생했습니다.</p>
+          <span>오류코드(004)</span>
+        </div>
+        <div class="kfsi-kiosk-error__text">
+          ※ 키오스크 장애 및 이용문의는 민원센터 A창구로 오셔서 말씀해 주세요.
+          <br />
+          (문의 : 02-1234-0119)
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

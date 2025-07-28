@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/kiosk.css" />
+
+    <script>
+      function receiptPrinting() {
+        $('.kfsi-kiosk-loading').addClass('active');
+        setTimeout(() => {
+          $('.kfsi-kiosk-loading').removeClass('active');
+        }, 1000);
+      }
+      var countdownTimer = null; // 타이머 핸들 저장용
+
+      function modalOpen(idx) {
+        // 모든 팝업 숨기고 대상만 활성화
+        $('.kfsi-kiosk-popup').removeClass('active');
+        $('#' + idx).addClass('active');
+
+        // 타이머 초기화
+        if (countdownTimer) {
+          clearInterval(countdownTimer);
+        }
+
+        var countdown = 3; // 시작 초 (원하는 숫자로 조절 가능)
+        var $timeEl = $('#' + idx).find('.kfsi-kiosk-popup-modal__time');
+
+        function updateTimerText() {
+          $timeEl.text(countdown + '초 후에 닫힙니다.');
+        }
+
+        updateTimerText(); // 초기 텍스트
+
+        countdownTimer = setInterval(function () {
+          countdown--;
+
+          if (countdown <= 0) {
+            clearInterval(countdownTimer);
+            countdownTimer = null;
+            modalClose(); // 닫기 실행
+          } else {
+            updateTimerText();
+          }
+        }, 1000);
+      }
+
+      function modalClose() {
+        $('.kfsi-kiosk-popup').removeClass('active');
+
+        // 닫을 때 타이머도 정리
+        if (countdownTimer) {
+          clearInterval(countdownTimer);
+          countdownTimer = null;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="kfsi-kiosk">
+      <div class="kfsi-kiosk-contents">
+        <header>한국소방안전원 민원 키오스크</header>
+      </div>
+      <div
+        style="padding: 40px; display: flex; flex-direction: column; gap: 10px"
+      >
+        <button
+          type="button"
+          class="btn btn-primary"
+          style="width: 100%"
+          onclick="modalOpen('popup01');"
+        >
+          alert01
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          style="width: 100%"
+          onclick="modalOpen('popup02');"
+        >
+          alert02
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          style="width: 100%"
+          onclick="modalOpen('popup03');"
+        >
+          alert03
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          style="width: 100%"
+          onclick="modalOpen('popup04');"
+        >
+          alert04
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          style="width: 100%"
+          onclick="modalOpen('popup05');"
+        >
+          alert05
+        </button>
+      </div>
+      <div class="kfsi-kiosk-popup" id="popup01">
+        <div class="kfsi-kiosk-popup-dim"></div>
+        <div class="kfsi-kiosk-popup-modal">
+          <div class="kfsi-kiosk-popup-modal__time">{3}초 후에 닫힙니다.</div>
+          <div class="kfsi-kiosk-popup-modal__text">
+            <p>인증번호가 발송되었습니다.</p>
+          </div>
+          <div class="kfsi-kiosk-popup-button">
+            <button
+              type="button"
+              class="btn btn-sm btn-primary"
+              style="width: 100%"
+              onclick="modalClose()"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="kfsi-kiosk-popup" id="popup02">
+        <div class="kfsi-kiosk-popup-dim"></div>
+        <div class="kfsi-kiosk-popup-modal">
+          <div class="kfsi-kiosk-popup-modal__time">{3}초 후에 닫힙니다.</div>
+          <div class="kfsi-kiosk-popup-modal__text">
+            <p>인증번호가 올바르지 않습니다.</p>
+          </div>
+          <div class="kfsi-kiosk-popup-button">
+            <button
+              type="button"
+              class="btn btn-sm btn-primary"
+              style="width: 100%"
+              onclick="modalClose()"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="kfsi-kiosk-popup" id="popup03">
+        <div class="kfsi-kiosk-popup-dim"></div>
+        <div class="kfsi-kiosk-popup-modal">
+          <div class="kfsi-kiosk-popup-modal__time">{3}초 후에 닫힙니다.</div>
+          <div class="kfsi-kiosk-popup-modal__text">
+            <p>
+              인증번호 입력시간이 만료되었습니다.<br />
+              다시 시도해 주세요.
+            </p>
+          </div>
+          <div class="kfsi-kiosk-popup-button">
+            <button
+              type="button"
+              class="btn btn-sm btn-primary"
+              style="width: 100%"
+              onclick="modalClose()"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="kfsi-kiosk-popup" id="popup04">
+        <div class="kfsi-kiosk-popup-dim"></div>
+        <div class="kfsi-kiosk-popup-modal">
+          <div class="kfsi-kiosk-popup-modal__time">{3}초 후에 닫힙니다.</div>
+          <div class="kfsi-kiosk-popup-modal__text">
+            <p>
+              입력하신 휴대폰 번호로 조회된 <br />
+              고객정보가 없습니다.
+            </p>
+          </div>
+          <div class="kfsi-kiosk-popup-button">
+            <button
+              type="button"
+              class="btn btn-sm btn-primary"
+              style="width: 100%"
+              onclick="modalClose()"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="kfsi-kiosk-popup" id="popup05">
+        <div class="kfsi-kiosk-popup-dim"></div>
+        <div class="kfsi-kiosk-popup-modal">
+          <div class="kfsi-kiosk-popup-modal__time">{3}초 후에 닫힙니다.</div>
+          <div class="kfsi-kiosk-popup-modal__text">
+            <p>
+              출력이 완료되었습니다. <br />
+              키오스크 하단에서 인쇄물을 수령해 주세요. 감사합니다.
+            </p>
+          </div>
+          <div class="kfsi-kiosk-popup-button">
+            <button
+              type="button"
+              class="btn btn-sm btn-primary"
+              style="width: 100%"
+              onclick="modalClose()"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="kfsi-kiosk-popup" id="popup06">
+        <div class="kfsi-kiosk-popup-dim"></div>
+        <div class="kfsi-kiosk-popup-modal">
+          <div class="kfsi-kiosk-popup-modal__time">{3}초 후에 닫힙니다.</div>
+          <div class="kfsi-kiosk-popup-modal__text">
+            <p>
+              출력이 실패하였습니다. <br />
+              장애 및 이용문의는 민원센터 A창구로 오셔서 접수해 주세요. (문의 :
+              02-1234-0119)
+            </p>
+          </div>
+          <div class="kfsi-kiosk-popup-button">
+            <button
+              type="button"
+              class="btn btn-sm btn-primary"
+              style="width: 100%"
+              onclick="modalClose()"
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/kiosk.css" />
+  </head>
+  <body>
+    <div class="kfsi-kiosk">
+      <div class="kfsi-kiosk-contents">
+        <header>한국소방안전원 민원 키오스크</header>
+        <div class="kfsi-kiosk-phone">
+          <div class="kfsi-kiosk-phone-title">
+            <strong>휴대폰 인증하기</strong>
+            <p>휴대폰 번호를 입력해 주세요.</p>
+          </div>
+          <div class="kfsi-kiosk-phone-input">
+            <input type="text" />
+            -<input type="text" /> -<input type="text" />
+            <button type="button">삭제</button>
+          </div>
+          <div class="kfsi-kiosk-phone-error" style="padding: 16px 0 40px 0">
+            <p>입력한 휴대폰 번호를 확인해 주세요.</p>
+          </div>
+          <div class="kfsi-kiosk-phone-keypad">
+            <div class="kfsi-kiosk-phone-keypad__number">
+              <button type="button">1</button>
+              <button type="button">2</button>
+              <button type="button">3</button>
+              <button type="button">4</button>
+              <button type="button">5</button>
+              <button type="button">6</button>
+              <button type="button">7</button>
+              <button type="button">8</button>
+              <button type="button">9</button>
+              <button type="button">010</button>
+              <button type="button">0</button>
+              <button type="button" class="kfsi-kiosk-phone-keypad__delete">
+                삭제
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="kfsi-kiosk-foot">
+        <div class="kfsi-kiosk-button">
+          <button
+            type="button"
+            class="btn btn-outline"
+            style="min-width: 336px"
+          >
+            취소
+          </button>
+          <button type="button" class="btn btn-primary" style="width: 100%">
+            인증번호 전송
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
