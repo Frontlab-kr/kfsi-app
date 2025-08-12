@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- swiper -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div id="headerMenu"></div>
+    <div class="kfsi kfsi--login">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <div class="kfsi-login-form">
+          <p class="mb-2">로그인 방법을 선택해 주세요.</p>
+          <div class="kfsi-tab01 kfsi-tab01--mo-grid3">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="tab01"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab01-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab01-pane"
+                  aria-selected="true"
+                >
+                  아이디
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="tab02"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab02-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab02-pane"
+                  aria-selected="false"
+                >
+                  간편인증
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="tab03"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab03-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab03-pane"
+                  aria-selected="false"
+                >
+                  실명확인
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div
+                class="tab-pane fade show active"
+                id="tab01-pane"
+                role="tabpanel"
+                aria-labelledby="tab01"
+                tabindex="0"
+              >
+                <div class="kfsi-board-write">
+                  <table summary="">
+                    <caption></caption>
+                    <colgroup>
+                      <col style="width: 110px" />
+                      <col style="" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="row">아이디</th>
+                        <td>
+                          <input
+                            type="text"
+                            class="form-control w-100"
+                            title="아이디"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">비밀번호</th>
+                        <td>
+                          <input
+                            type="password"
+                            class="form-control w-100"
+                            title="아이디"
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="kfsi-login-form__text">
+                  ※ 아이디는 소방안전24 웹사이트 회원가입으로 생성할 수
+                  있습니다.<br />
+                  ※ 문의는 소방안전24 웹사이트 묻고답하기 메뉴를 이용해 주세요.
+                </div>
+                <div class="kfsi-button">
+                  <p>
+                    <button type="button" class="btn btn-lg btn-primary">
+                      아이디 로그인
+                    </button>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab02-pane"
+                role="tabpanel"
+                aria-labelledby="tab02"
+                tabindex="0"
+              >
+                <div class="kfsi-login-form__img">
+                  <img
+                    src="./assets/images/login/kakaotalk.png"
+                    alt="카카오톡"
+                  />
+                  <img
+                    src="./assets/images/login/bankKB.png"
+                    alt="KB국민은행"
+                  />
+                  <img src="./assets/images/login/payco.png" alt="페이코" />
+                  <img src="./assets/images/login/pass.png" alt="통신사 패스" />
+                  <img
+                    src="./assets/images/login/samsungpass.png"
+                    alt="삼성패스"
+                  />
+                  <img src="./assets/images/login/naver.png" alt="네이버" />
+                  <img
+                    src="./assets/images/login/shinhan.png"
+                    alt="신한은행 인증서"
+                  />
+                  <img src="./assets/images/login/toss.png" alt="토스" />
+                  <img
+                    src="./assets/images/login/bankKakao.png"
+                    alt="카카오뱅크"
+                  />
+                  <img src="./assets/images/login/woori.png" alt="우리은행" />
+                  <img
+                    src="./assets/images/login/banksalad.png"
+                    alt="뱅크샐러드"
+                  />
+                  <img src="./assets/images/login/hana.png" alt="하나은행" />
+                  <img src="./assets/images/login/nh.png" alt="NH은행" />
+                  <img src="./assets/images/login/dream.png" alt="드림인증" />
+                </div>
+                <div class="kfsi-login-form__text">
+                  ※ 카카오톡, KB국민은행, 페이코, 통신사 패스, 삼성패스, 네이버,
+                  신한은행 인증서, 토스, 카카오뱅크, 우리은행, 뱅크샐러드,
+                  하나은행, NH은행, 드림인증을 이용하여 로그인하실 수 있습니다.
+                </div>
+                <div class="kfsi-button">
+                  <p>
+                    <button type="button" class="btn btn-lg btn-primary">
+                      간편인증 로그인
+                    </button>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab03-pane"
+                role="tabpanel"
+                aria-labelledby="tab03"
+                tabindex="0"
+              >
+                <div class="kfsi-board">
+                  <div class="kfsi-board-write">
+                    <table
+                      summary="휴대폰 번호를 입력하여 실명확인을 진행하는 테이블입니다."
+                    >
+                      <caption>
+                        실명확인 로그인
+                      </caption>
+                      <colgroup>
+                        <col style="width: 110px" />
+                        <col style="" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row">휴대폰 번호</th>
+                          <td>
+                            <div class="kfsi-mypage-phone">
+                              <div class="kfsi-mypage-phone-input">
+                                <select
+                                  class="form-select"
+                                  aria-label="휴대폰 번호 앞자리 선택"
+                                  title="휴대폰 번호 앞자리 선택"
+                                  style="min-width: 80px; width: 80px"
+                                >
+                                  <option selected>010</option>
+                                </select>
+                                -
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="휴대폰 번호 중간 자리 입력"
+                                  style="min-width: 110px; width: 110px"
+                                />
+                                -
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  title="휴대폰 번호 마지막 자리 입력"
+                                  style="min-width: 110px; width: 110px"
+                                />
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="kfsi-login-form__text">
+                  ※ 실명확인을 위해 실명확인기관(SCI평가정보)에 입력한
+                  주민등록번호는 실명확인을 위해서만 이용되며 별도로 저장 되지
+                  않습니다.
+                </div>
+                <div class="kfsi-button">
+                  <p>
+                    <button type="button" class="btn btn-lg btn-primary">
+                      실명확인 로그인
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
