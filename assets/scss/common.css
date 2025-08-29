@@ -21971,9 +21971,6 @@ small, .small {
 }
 
 /* reset */
-.kfsi--wrap-t {
-  min-height: 100vh;
-}
 .kfsi--wrap-t ul {
   margin: 0;
   padding: 0;
@@ -22629,11 +22626,9 @@ html.active-menu .kfsi-menu {
 .kfsi-nav-t .nav-depth01 .nav-depth02-link li {
   position: relative;
 }
-.kfsi-nav-t .nav-depth01 .nav-depth02-link li + li {
-  margin-top: 10px;
-}
 .kfsi-nav-t .nav-depth01 .nav-depth02-link li a {
   display: block;
+  padding: 10px 0;
   padding-left: 21px;
   font-size: 16px;
   color: #333;
@@ -22648,7 +22643,7 @@ html.active-menu .kfsi-menu {
   content: "";
   position: absolute;
   left: 8px;
-  top: 10px;
+  top: 19px;
 }
 .kfsi-nav-t .btn-logout {
   width: 110px;

@@ -1,7 +1,7 @@
 $mobileWidth-t: 767px;
 /* reset */
 .kfsi--wrap-t {
-  min-height: 100vh;
+  //min-height: 100vh;
   ul {
     margin: 0;
     padding: 0;
@@ -738,11 +738,10 @@ html {
         }
         li {
           position: relative;
-          & + li {
-            margin-top: 10px;
-          }
+
           a {
             display: block;
+            padding: 10px 0;
             padding-left: 21px;
             font-size: 16px;
             color: #333;
@@ -756,7 +755,7 @@ html {
               content: '';
               position: absolute;
               left: 8px;
-              top: 10px;
+              top: 19px;
             }
           }
         }
