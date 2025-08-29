@@ -22598,6 +22598,7 @@ html.active-menu .kfsi-menu {
   }
 }
 .kfsi-nav-t .nav-depth01 .nav-depth02-tit {
+  width: 100%;
   margin: 0;
   padding: 0 16px;
   font-size: 18px;
@@ -22607,6 +22608,11 @@ html.active-menu .kfsi-menu {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.kfsi-nav-t .nav-depth01 .nav-depth02-tit a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 @media screen and (max-width: 767px) {
   .kfsi-nav-t .nav-depth01 .nav-depth02-tit {
