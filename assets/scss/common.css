@@ -22170,7 +22170,7 @@ html.active-menu .kfsi-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   background-color: #f9f9f9;
 }
 
@@ -22506,7 +22506,7 @@ html.active-menu .kfsi-menu {
 .kfsi-nav-t {
   display: flex;
   width: 100%;
-  height: calc(100vh - 50px);
+  height: calc(100dvh - 50px);
   background: #f6f6f6;
 }
 .kfsi-nav-t .nav-depth00 {
@@ -22681,7 +22681,7 @@ html.active-menu .kfsi-menu {
 /* intro */
 .intro-cont {
   display: flex;
-  height: 100vh;
+  height: 100dvh;
   justify-content: center;
   align-items: center;
 }
@@ -22689,7 +22689,7 @@ html.active-menu .kfsi-menu {
 /* error */
 .error-cont {
   display: flex;
-  height: 100vh;
+  height: 100dvh;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -22701,7 +22701,7 @@ html.active-menu .kfsi-menu {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
 }
 .perm-cont-inner {
   margin: 0 auto;
@@ -22958,7 +22958,7 @@ html.active-menu .kfsi-menu {
   right: 0;
   bottom: 0;
   left: 0;
-  height: 100vh;
+  height: 100dvh;
   z-index: 100;
   display: none;
 }

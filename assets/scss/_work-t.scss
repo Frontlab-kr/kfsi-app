@@ -287,7 +287,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   background-color: #f9f9f9;
 }
 .kfsi-sub-write {
@@ -635,7 +635,7 @@ html {
 .kfsi-nav-t {
   display: flex;
   width: 100%;
-  height: calc(100vh - 50px);
+  height: calc(100dvh - 50px);
   background: #f6f6f6;
   .nav-depth00 {
     display: flex;
@@ -799,7 +799,7 @@ html {
 /* intro */
 .intro-cont {
   display: flex;
-  height: 100vh;
+  height: 100dvh;
   justify-content: center;
   align-items: center;
 }
@@ -807,7 +807,7 @@ html {
 /* error */
 .error-cont {
   display: flex;
-  height: 100vh;
+  height: 100dvh;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -819,7 +819,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   &-inner {
     margin: 0 auto;
     padding: 0 20px;
@@ -1082,7 +1082,7 @@ html {
     right: 0;
     bottom: 0;
     left: 0;
-    height: 100vh;
+    height: 100dvh;
     z-index: 100;
     display: none;
     &-head {
