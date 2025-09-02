@@ -37613,7 +37613,8 @@ body {
 .kfsi-backup-intro ul li {
   margin-bottom: 20px;
 }
-.kfsi-backup-intro-item a {
+.kfsi-backup-intro-item a,
+.kfsi-backup-intro-item button {
   position: relative;
   display: flex;
   align-items: center;
@@ -37626,7 +37627,8 @@ body {
   border-radius: 10px;
   background: linear-gradient(112deg, #1e863c -3.62%, #0f6327 101.63%);
 }
-.kfsi-backup-intro-item--01 a {
+.kfsi-backup-intro-item--01 a,
+.kfsi-backup-intro-item--01 button {
   height: 180px;
   color: #fff;
   font-family: Pretendard;
@@ -37636,7 +37638,8 @@ body {
   line-height: normal;
   letter-spacing: 0.84px;
 }
-.kfsi-backup-intro-item--01 a::before {
+.kfsi-backup-intro-item--01 a::before,
+.kfsi-backup-intro-item--01 button::before {
   content: "";
   display: block;
   position: absolute;
@@ -37646,7 +37649,8 @@ body {
   height: 100px;
   background: url(../images/backup/intro01.svg) no-repeat 50% 50%;
 }
-.kfsi-backup-intro-item--02 a {
+.kfsi-backup-intro-item--02 a,
+.kfsi-backup-intro-item--02 button {
   height: 120px;
   background: #f1f1f1;
   color: #000;
@@ -37657,7 +37661,8 @@ body {
   line-height: normal;
   letter-spacing: 0.72px;
 }
-.kfsi-backup-intro-item--02 a::before {
+.kfsi-backup-intro-item--02 a::before,
+.kfsi-backup-intro-item--02 button::before {
   content: "";
   display: block;
   position: absolute;

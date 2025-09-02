@@ -15179,7 +15179,8 @@ body {
         }
       }
       &-item {
-        a {
+        a,
+        button {
           position: relative;
           display: flex;
           align-items: center;
@@ -15193,7 +15194,8 @@ body {
           background: linear-gradient(112deg, #1e863c -3.62%, #0f6327 101.63%);
         }
         &--01 {
-          a {
+          a,
+          button {
             height: 180px;
             color: #fff;
             font-family: Pretendard;
@@ -15215,7 +15217,8 @@ body {
           }
         }
         &--02 {
-          a {
+          a,
+          button {
             height: 120px;
             background: #f1f1f1;
             color: #000;
