@@ -704,6 +704,44 @@ $mobileWidth: 3992px;
       }
     }
   }
+  &-tablesub {
+    table {
+      color: #000;
+      font-family: Pretendard;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; /* 142.857% */
+      thead {
+        th {
+          padding: 5px;
+          border: 1px solid #ccc;
+          background: #f7f7f7;
+          text-align: center;
+          border-bottom: none;
+          &:first-child {
+            border-left: none;
+          }
+          &:last-child {
+            border-right: none;
+          }
+        }
+      }
+      tbody {
+        th,
+        td {
+          padding: 10px;
+          border: 1px solid #ccc;
+          &:first-child {
+            border-left: none;
+          }
+          &:last-child {
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
   &-list {
     @media screen and (max-width: $mobileWidth) {
       border-top: 2px solid #004d16;

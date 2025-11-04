@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한국소방안전원</title>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- swiper -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/common.js"></script>
+
+    <link rel="SHORTCUT ICON" href="./assets/images/k6.ico" />
+    <link rel="stylesheet" href="./assets/scss/common.css" />
+  </head>
+  <body>
+    <div id="headerMenu"></div>
+    <div class="kfsi kfsi--back">
+      <div id="header"></div>
+      <div id="kfsi-body">
+        <h1 class="hide">신규이용신청</h1>
+        <div class="kfsi-backup">
+          <div class="kfsi-agree-box">
+            <div class="kfsi-agree-box__title">이용약관 (필수선택)</div>
+            <div class="kfsi-agree-box__contents">
+              제1조 목적<br />
+              제2조 정의<br />
+              제3조 약관의 효력 및 변경<br />
+              제4조 서비스의 제공<br />
+              제5조 서비스의 중단<br />
+              제6조 가입절차<br />
+              제7조 탈퇴 및 제명 등<br />
+              제8조 개인정보보호<br />
+              제9조 게시물 또는 내용물의 삭제<br />
+              제10조 게시물의 저작권<br />
+              제 11보 안전원 소유권
+            </div>
+            <div class="kfsi-agree-box__check">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="agree01"
+                  id="agree01-01"
+                />
+                <label class="form-check-label" for="agree01-01">
+                  위 내용을 동의합니다.
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="agree01"
+                  id="agree01-02"
+                />
+                <label class="form-check-label" for="agree01-02">
+                  위 내용에 동의하지 않습니다.
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="kfsi-agree-box mt-12">
+            <div class="kfsi-agree-box__title">
+              개인정보 수집 및 이용에 대한 안내 (필수선택)
+            </div>
+            <div class="kfsi-agree-box__contents">
+              <strong>□ 개인정보 수집 및 이용내역</strong><br />
+              - 회원가입(계정인증방식)<br />
+              <div class="kfsi-tablesub mt-2">
+                <table>
+                  <caption>
+                    개인정보 수집 및 이용에 대한 안내 테이블입니다. 수집·이용
+                    항목, 목적, 그리고 보유기간을 제공합니다.
+                  </caption>
+                  <colgroup>
+                    <col style="width: 400px" />
+                    <col style="width: 240px" />
+                    <col style="width: 240px" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">수집·이용 항목</th>
+                      <th scope="col">수집·이용 목적</th>
+                      <th scope="col">보유기간</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        성명,휴대폰,계정,비밀번호,이메일, 기타(만 14세 미만이
+                        경우 법정대리인 이름),(선택)생년월일
+                      </td>
+                      <td>
+                        사이트 서비스 이용<br />
+                        (구인,구직,묻고답하기 등)<br />
+                        *강습 등 교육접수시 별도 실명인증
+                      </td>
+                      <td>최근 사이트 접속일 기준 1년</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="mt-2">
+                <ul>
+                  <li>
+                    사이트 이용 과정에서 자동으로 생성되어 수집될 수 있는 항목
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="kfsi-agree-box__text">
+              ※ 동의를 거부할 권리가 있다는 사실 및 동의 거부에 따른 불이익 내용
+              : 개인정보 수집 및 이용 동의를 거부할 권리가 있으며, 동의 거부시
+              해당 서비스를 이용할 수 없습니다.
+            </div>
+            <div class="kfsi-agree-box__check">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="agree02"
+                  id="agree02-01"
+                />
+                <label class="form-check-label" for="agree02-01">
+                  위 내용을 동의합니다.
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="agree02"
+                  id="agree02-02"
+                />
+                <label class="form-check-label" for="agree02-02">
+                  위 내용에 동의하지 않습니다.
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12">
+            <h4 class="kfsi-h4">본인확인 정보</h4>
+            <div class="kfsi-board-write">
+              <table summary="">
+                <caption></caption>
+                <colgroup>
+                  <col style="width: 110px" />
+                  <col style="" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row">성명</th>
+                    <td>
+                      <input
+                        type="text"
+                        class="form-control w-100"
+                        placeholder="ex) 홍길동"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">생년월일</th>
+                    <td>
+                      <div class="mt-2">
+                        <input
+                          type="text"
+                          class="form-control w-100"
+                          placeholder="ex) 19790803"
+                        />
+                        <div class="my-2 text-muted fs-6">
+                          ※ 생년월일 입력 시 주민등록번호상 <br />
+                          생년월일(8자리)로 숫자만 입력해주세요.
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">소속</th>
+                    <td>
+                      <div class="d-flex flex-column gap-2 my-3">
+                        <select class="form-select w-100">
+                          <option selected>- 본 부 -</option>
+                        </select>
+                        <select class="form-select w-100">
+                          <option selected>- 본 부 -</option>
+                        </select>
+                        <select class="form-select w-100">
+                          <option selected>- 본 부 -</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="kfsi-backup-button mt-10">
+              <button type="button" class="btn btn-primary btn-lg w-100">
+                인증서 확인
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="kfsi-footer-m">
+        <div class="kfsi-footer-m__logo">
+          <img src="/assets/images/footer.svg" alt="소방행정지원시스템" />
+        </div>
+        <div class="kfsi-footer-m__text">
+          <strong>문의 : 소방행정지원시스템 고객센터 02-850-1377</strong><br />
+          COPYRIGHT ⓒ 2019 소방청·한국소방안전원 All rights reserved.
+        </div>
+        <div class="kfsi-footer-m__link">
+          <a href=""><strong>개인정보처리방침</strong></a>
+          <hr />
+          <a href="">이용약관 </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

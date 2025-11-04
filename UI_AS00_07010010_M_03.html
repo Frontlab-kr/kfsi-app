@@ -21,29 +21,46 @@
   </head>
   <body>
     <div id="headerMenu"></div>
-    <div class="kfsi kfsi--backup-intro">
+    <div class="kfsi kfsi--back">
       <div id="header"></div>
       <div id="kfsi-body">
-        <h1 class="hide">소방행정지원시스템</h1>
+        <h1 class="hide">해지신청</h1>
         <div class="kfsi-backup">
-          <div class="kfsi-backup-logo">
-            <img src="./assets/images/backup/logo.svg" alt="" />
+          <div>
+            인증서의 해지를 필요한 경우 신청하는 페이지입니다. <br />
+            해지사유를 입력후 신청시 곧바로 해지 처리됩니다.<br />
+            <strong class="text-danger"
+              >※ 문의사항 : SES 고객센터 02-850-1377</strong
+            >
           </div>
-          <div class="kfsi-backup-intro">
-            <ul>
-              <li class="kfsi-backup-intro-item kfsi-backup-intro-item--01">
-                <button>인증서 로그인</button>
-              </li>
-              <li class="kfsi-backup-intro-item kfsi-backup-intro-item--02">
-                <a href="">인증서 가져오기</a>
-              </li>
-              <li class="kfsi-backup-intro-item kfsi-backup-intro-item--03">
-                <a href="">신규 이용신청</a>
-              </li>
-              <li class="kfsi-backup-intro-item kfsi-backup-intro-item--04">
-                <a href="">해지신청</a>
-              </li>
-            </ul>
+          <div class="mt-4">
+            <div class="kfsi-board-write">
+              <table summary="">
+                <caption></caption>
+                <colgroup>
+                  <col style="width: 110px" />
+                  <col style="" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row">해지사유</th>
+                    <td class="pt-2">
+                      <textarea
+                        class="form-control w-100"
+                        placeholder="해지사유를 입력해 주세요."
+                        style="height: 250px"
+                        rows="3"
+                      ></textarea>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="kfsi-backup-button mt-10">
+              <button type="button" class="btn btn-primary btn-lg w-100">
+                해지신청
+              </button>
+            </div>
           </div>
         </div>
       </div>

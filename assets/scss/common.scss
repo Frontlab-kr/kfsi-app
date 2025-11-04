@@ -1485,6 +1485,54 @@ body {
       }
     }
   }
+  &-footer-m {
+    padding: 24px 16px;
+    background: #666;
+    &__logo {
+      display: flex;
+    }
+    &__text {
+      margin: 10px 0;
+      color: #fff;
+      font-family: Pretendard;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; /* 153.846% */
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      border-top: 1px solid #999;
+      padding: 16px 0 0 0;
+      hr {
+        display: block;
+        width: 1px;
+        height: 10px;
+        background: #fff;
+        border: 0;
+        opacity: 1;
+      }
+      a {
+        color: #fff;
+        font-family: Pretendard;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        strong {
+          color: #d7f2f9;
+          font-family: Pretendard;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 0.015px;
+        }
+      }
+    }
+  }
   &-snb {
     width: 240px;
     height: 100%;
@@ -11058,6 +11106,45 @@ body {
       }
     }
   }
+  &-agree-box {
+    &__title {
+      padding: 8px 20px;
+      border-top: 2px solid #0f6327;
+      background: #e4f2d3;
+      color: #000;
+      font-family: Pretendard;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 150% */
+    }
+    &__contents {
+      height: 240px;
+      padding: 16px 10px;
+      border-bottom: 1px solid #a1a1a1;
+      color: #000;
+      font-family: Pretendard;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 160% */
+      overflow: auto;
+    }
+    &__text {
+      padding: 16px 0;
+      color: #000;
+      font-family: Pretendard;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 160% */
+    }
+    &__check {
+      padding: 16px;
+      border-bottom: 1px solid #a1a1a1;
+      background: #f7f7f7;
+    }
+  }
   &-classroom {
     &-index {
       display: grid;
@@ -15162,6 +15249,7 @@ body {
     }
   }
   &-backup {
+    min-height: 520px;
     padding: 30px 16px;
     &-logo {
       display: flex;
@@ -15176,6 +15264,11 @@ body {
         list-style: none;
         li {
           margin-bottom: 20px;
+        }
+        &::after {
+          content: '';
+          display: block;
+          clear: both;
         }
       }
       &-item {
@@ -15220,24 +15313,85 @@ body {
         &--02 {
           a,
           button {
-            height: 120px;
+            height: 100px;
             background: #f1f1f1;
             color: #000;
             font-family: Pretendard;
-            font-size: 24px;
+            font-size: 22px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
-            letter-spacing: 0.72px;
+            letter-spacing: 0.66px;
             &::before {
               content: '';
               display: block;
               position: absolute;
-              right: 14px;
-              bottom: 10px;
-              width: 100px;
-              height: 100px;
+              right: 30px;
+              bottom: 20px;
+              width: 60px;
+              height: 60px;
               background: url(../images/backup/intro02.svg) no-repeat 50% 50%;
+              background-size: cover;
+            }
+          }
+        }
+        &--03 {
+          width: calc(50% - 10px);
+          margin: 0 20px 0 0 !important;
+          float: left;
+          a,
+          button {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px;
+            height: 100px;
+            border-radius: 10px;
+            background: #e4f2d3;
+            color: #000;
+            text-align: center;
+            font-family: Pretendard;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            &::before {
+              content: '';
+              display: block;
+              width: 35px;
+              height: 35px;
+              background: url(../images/backup/intro03.svg) no-repeat 50% 50%;
+            }
+          }
+        }
+        &--04 {
+          width: calc(50% - 10px);
+          margin: 0 !important;
+          float: left;
+          a,
+          button {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px;
+            height: 100px;
+            border-radius: 10px;
+            background: #e4f2d3;
+            color: #000;
+            text-align: center;
+            font-family: Pretendard;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            &::before {
+              content: '';
+              display: block;
+              width: 35px;
+              height: 35px;
+              background: url(../images/backup/intro04.svg) no-repeat 50% 50%;
             }
           }
         }
